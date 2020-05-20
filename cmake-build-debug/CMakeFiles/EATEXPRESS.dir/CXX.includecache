@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/joao/Desktop/CAL2/Utils.cpp
+algorithm
+-
+Utils.h
+C:/Users/joao/Desktop/CAL2/Utils.h
+
+C:/Users/joao/Desktop/CAL2/Utils.h
+string
+-
+vector
+-
+

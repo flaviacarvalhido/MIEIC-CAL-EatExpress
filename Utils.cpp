@@ -112,29 +112,7 @@ vector<string> decompose(string s, char sep) {
 
 
 
-void replaceAccent(string& str) {
-    string result = "";
-    for (unsigned int i = 0; i < str.length(); i++) {
-        if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'a';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'A';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'e';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'E';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'o';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'O';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'u';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'U';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'i';
-        else if (str[i] == '�' || str[i] == '�' || str[i] == '�' || str[i] == '�')result += 'I';
-        else if (str[i] == '�')result += 'c';
-        else if (str[i] == '�')result += 'C';
-        else if (str[i] == '�')result += 'n';
-        else if (str[i] == '�')result += 'N';
-        else if (str[i] == '�' || str[i] == '�')result += 'y';
-        else if (str[i] == '�')result += 'Y';
-        else result += str[i];
-    }
-    str = result;
-}
+
 
 bool compare_str(string str1, string str2) {
     replaceAccent(str1);
