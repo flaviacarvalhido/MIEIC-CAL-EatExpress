@@ -7,7 +7,7 @@
 Deliverer::Deliverer() {
     this->id=0;
     this->isFree=true;
-    this->vehicle=Vehicle();
+    this->vehicle= Vehicle();
 }
 
 Deliverer::Deliverer(int id, Vehicle v) {

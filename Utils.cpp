@@ -110,7 +110,14 @@ vector<string> decompose(string s, char sep) {
     return elements;
 }
 
+
+
+
+
 bool compare_str(string str1, string str2) {
+    replaceAccent(str1);
+    replaceAccent(str2);
+
     transform(str1.begin(), str1.end(), str1.begin(), ::toupper);
     transform(str2.begin(), str2.end(), str2.begin(), ::toupper);
     if (str1 == str2) return true;
