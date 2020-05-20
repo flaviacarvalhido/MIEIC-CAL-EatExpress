@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/joao/Desktop/CAL2/Client.cpp" "C:/Users/joao/Desktop/CAL2/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Client.cpp.obj"
-  "C:/Users/joao/Desktop/CAL2/Deliverer.cpp" "C:/Users/joao/Desktop/CAL2/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj"
-  "C:/Users/joao/Desktop/CAL2/Delivery.cpp" "C:/Users/joao/Desktop/CAL2/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj"
-  "C:/Users/joao/Desktop/CAL2/Restaurant.cpp" "C:/Users/joao/Desktop/CAL2/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj"
-  "C:/Users/joao/Desktop/CAL2/Utils.cpp" "C:/Users/joao/Desktop/CAL2/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj"
-  "C:/Users/joao/Desktop/CAL2/Vehicle.cpp" "C:/Users/joao/Desktop/CAL2/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj"
-  "C:/Users/joao/Desktop/CAL2/main.cpp" "C:/Users/joao/Desktop/CAL2/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/main.cpp.obj"
+  "C:/Users/ricar/Desktop/Projeto Cal/Client.cpp" "C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Client.cpp.obj"
+  "C:/Users/ricar/Desktop/Projeto Cal/Deliverer.cpp" "C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj"
+  "C:/Users/ricar/Desktop/Projeto Cal/Delivery.cpp" "C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj"
+  "C:/Users/ricar/Desktop/Projeto Cal/Restaurant.cpp" "C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj"
+  "C:/Users/ricar/Desktop/Projeto Cal/Utils.cpp" "C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj"
+  "C:/Users/ricar/Desktop/Projeto Cal/Vehicle.cpp" "C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj"
+  "C:/Users/ricar/Desktop/Projeto Cal/main.cpp" "C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

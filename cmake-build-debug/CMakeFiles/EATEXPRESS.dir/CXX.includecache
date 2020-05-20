@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/joao/Desktop/CAL2/Utils.cpp
-algorithm
--
-Utils.h
-C:/Users/joao/Desktop/CAL2/Utils.h
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.cpp
+Deliverer.h
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
 
-C:/Users/joao/Desktop/CAL2/Utils.h
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
+Vehicle.h
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
 string
--
-vector
 -
 

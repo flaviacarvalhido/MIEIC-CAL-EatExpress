@@ -26,15 +26,8 @@ void readClientFile(string file) {
     while (!client_file.eof()) {
         Client c = Client();
         getline(client_file,temp);
-        if (temp != "::::::::::") c.setName(temp);
-        else {
-            getline(client_file,temp);
-            c.setName(temp);
-        }
-        //read "address"
-        getline(client_file,temp);
-        c.setNIF(stoi(temp));
-       clients.push_back(c);
+        c.setId(stoi(temp));
+        clients.push_back(c);
     }
 }
 
@@ -61,15 +54,15 @@ void readDeliveriesFile(string file) {
     while (!delivery_file.eof()) {
         Delivery d = Delivery();
         getline(delivery_file, temp);
-        if (temp != "::::::::::") d.setClient(Client(stol(temp)));
+        if (temp != "::::::::::") d.setClient(Client(stoi(temp)));
         else {
             getline(delivery_file, temp);
-            d.setClient(Client(stol(temp)));
+            d.setClient(Client(stoi(temp)));
         }
         getline(delivery_file, temp);
         d.setRestaurant(Restaurant(stoi(temp)));
         getline(delivery_file, temp);
-        temp_temp_vec= decompose(temp, ',');
+        temp_temp_vec = decompose(temp, ',');
 
         for(unsigned int i =0;i< temp_temp_vec.size();i++){
             temp_vec.push_back(mstoi(temp_temp_vec[i]));
