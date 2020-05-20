@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.cpp
+Deliverer.h
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
+Vehicle.h
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
+string
+-
+

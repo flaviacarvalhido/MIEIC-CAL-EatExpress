@@ -6,6 +6,8 @@
 #define EATEXPRESS_DELIVERER_H
 
 
+#include "Vehicle.h"
+
 class Deliverer {
 private:
     int id;
