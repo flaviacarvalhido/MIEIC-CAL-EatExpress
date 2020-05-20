@@ -59,4 +59,8 @@ int Delivery::calculateOccupiedSpace() {
     return result;
 }
 
+Delivery::~Delivery() {
+
+}
+
 

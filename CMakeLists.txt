@@ -3,4 +3,20 @@ project(EATEXPRESS)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(EATEXPRESS main.cpp Client.cpp Client.h Restaurant.cpp Restaurant.h Deliverer.cpp Deliverer.h Vehicle.cpp Vehicle.h Delivery.cpp Delivery.h Utils.h Utils.cpp)
+include_directories(.)
+
+add_executable(EATEXPRESS
+        Client.cpp
+        Client.h
+        Deliverer.cpp
+        Deliverer.h
+        Delivery.cpp
+        Delivery.h
+        Graph.h
+        main.cpp
+        Restaurant.cpp
+        Restaurant.h
+        Utils.cpp
+        Utils.h
+        Vehicle.cpp
+        Vehicle.h)

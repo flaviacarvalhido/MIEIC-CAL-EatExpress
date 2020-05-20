@@ -16,3 +16,7 @@ int Restaurant::getId() {
 void Restaurant::setId(int i) {
     this->id = i;
 }
+
+Restaurant::~Restaurant() {
+
+}
