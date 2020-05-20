@@ -17,3 +17,7 @@ int Client::getId() {
 void Client::setId(int id) {
     this->id=id;
 }
+
+Client::~Client() {
+
+}

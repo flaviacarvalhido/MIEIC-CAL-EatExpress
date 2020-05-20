@@ -27,6 +27,13 @@ int s1(string m) {
     return 0;
 }
 
+int base10(unsigned int times) {
+    int result = 1;
+    for (unsigned int i = 0; i < times; i++) {
+        result *= 10;
+    }
+    return result;
+}
 
 int mstoi(string m) {
     int result = 0;
@@ -93,7 +100,6 @@ vector<string> decompose(string s, char sep) {
     for (unsigned int i = 0; i < s.length(); i++) {
         if (s[i] == sep) {
             trim(usage);
-            replaceAccent(usage);
             elements.push_back(usage);
             usage = "";
         }
@@ -115,8 +121,6 @@ vector<string> decompose(string s, char sep) {
 
 
 bool compare_str(string str1, string str2) {
-    replaceAccent(str1);
-    replaceAccent(str2);
 
     transform(str1.begin(), str1.end(), str1.begin(), ::toupper);
     transform(str2.begin(), str2.end(), str2.begin(), ::toupper);

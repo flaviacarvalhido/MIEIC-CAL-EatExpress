@@ -39,6 +39,10 @@ bool Deliverer::getIsFree() {
     return isFree;
 }
 
+Deliverer::~Deliverer() {
+
+}
+
 
 
 

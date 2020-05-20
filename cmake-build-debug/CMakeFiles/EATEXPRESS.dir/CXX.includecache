@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/ricar/Desktop/Projeto Cal/Client.cpp
+Client.h
+C:/Users/ricar/Desktop/Projeto Cal/Client.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Client.h
+string
+-
+fstream
+-
+
 C:/Users/ricar/Desktop/Projeto Cal/Deliverer.cpp
 Deliverer.h
 C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
@@ -14,7 +24,63 @@ C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
 Vehicle.h
 C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
 
+C:/Users/ricar/Desktop/Projeto Cal/Delivery.cpp
+Delivery.h
+C:/Users/ricar/Desktop/Projeto Cal/Delivery.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Delivery.h
+vector
+-
+Client.h
+C:/Users/ricar/Desktop/Projeto Cal/Client.h
+Restaurant.h
+C:/Users/ricar/Desktop/Projeto Cal/Restaurant.h
+Deliverer.h
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Restaurant.cpp
+Restaurant.h
+C:/Users/ricar/Desktop/Projeto Cal/Restaurant.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Restaurant.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Utils.cpp
+algorithm
+-
+Utils.h
+C:/Users/ricar/Desktop/Projeto Cal/Utils.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Utils.h
+string
+-
+vector
+-
+
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.cpp
+Vehicle.h
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
+
 C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
 string
 -
+
+C:/Users/ricar/Desktop/Projeto Cal/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Client.h
+C:/Users/ricar/Desktop/Projeto Cal/Client.h
+Restaurant.h
+C:/Users/ricar/Desktop/Projeto Cal/Restaurant.h
+Deliverer.h
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
+Vehicle.h
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
+Delivery.h
+C:/Users/ricar/Desktop/Projeto Cal/Delivery.h
+Utils.h
+C:/Users/ricar/Desktop/Projeto Cal/Utils.h
 

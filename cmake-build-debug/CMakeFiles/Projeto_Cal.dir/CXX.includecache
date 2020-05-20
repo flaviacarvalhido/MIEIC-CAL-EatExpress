@@ -1,0 +1,106 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ricar/Desktop/Projeto Cal/Client.h
+string
+-
+fstream
+-
+
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
+Vehicle.h
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Delivery.h
+vector
+-
+Client.h
+C:/Users/ricar/Desktop/Projeto Cal/Client.h
+Restaurant.h
+C:/Users/ricar/Desktop/Projeto Cal/Restaurant.h
+Deliverer.h
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Graph.h
+iostream
+-
+vector
+-
+queue
+-
+limits
+-
+algorithm
+-
+unordered_set
+-
+MutablePriorityQueue.h
+C:/Users/ricar/Desktop/Projeto Cal/MutablePriorityQueue.h
+
+C:/Users/ricar/Desktop/Projeto Cal/MutablePriorityQueue.h
+vector
+-
+
+C:/Users/ricar/Desktop/Projeto Cal/Point.h
+ostream
+-
+
+C:/Users/ricar/Desktop/Projeto Cal/Restaurant.h
+
+C:/Users/ricar/Desktop/Projeto Cal/Utils.h
+string
+-
+vector
+-
+
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
+string
+-
+
+C:/Users/ricar/Desktop/Projeto Cal/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Client.h
+C:/Users/ricar/Desktop/Projeto Cal/Client.h
+Restaurant.h
+C:/Users/ricar/Desktop/Projeto Cal/Restaurant.h
+Deliverer.h
+C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h
+Vehicle.h
+C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h
+Delivery.h
+C:/Users/ricar/Desktop/Projeto Cal/Delivery.h
+Utils.h
+C:/Users/ricar/Desktop/Projeto Cal/Utils.h
+Point.h
+C:/Users/ricar/Desktop/Projeto Cal/Point.h
+Graph.h
+C:/Users/ricar/Desktop/Projeto Cal/Graph.h
+parse.h
+C:/Users/ricar/Desktop/Projeto Cal/parse.h
+
+C:/Users/ricar/Desktop/Projeto Cal/parse.h
+string
+-
+fstream
+-
+vector
+-
+cmath
+-
+Utils.h
+C:/Users/ricar/Desktop/Projeto Cal/Utils.h
+Point.h
+C:/Users/ricar/Desktop/Projeto Cal/Point.h
+Graph.h
+C:/Users/ricar/Desktop/Projeto Cal/Graph.h
+
