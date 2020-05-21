@@ -126,6 +126,10 @@ public:
     int getNumVertex() const;
     vector<Vertex<T> *> getVertexSet() const;
 
+    vector<T> dfs() const;
+    void dfsVisit(Vertex<T> *v, vector<T> & res) const;
+    vector<T> bfs(const T & source) const;
+
     // Fp05 - single source
     void dijkstraShortestPath(const T &s);
     void unweightedShortestPath(const T &s);
@@ -202,6 +206,73 @@ bool Graph<T>::addEdge(const T &sourc, const T &dest, double w) {
     return true;
 }
 
+
+/****************** 2a) dfs ********************/
+
+/*
+ * Performs a depth-first search (dfs) in a graph (this).
+ * Returns a vector with the contents of the vertices by dfs order.
+ * Follows the algorithm described in theoretical classes.
+ */
+template <class T>
+vector<T> Graph<T>::dfs() const {
+    vector<T> res;
+    for (auto v : vertexSet)
+        v->visited = false;
+    for (auto v : vertexSet)
+        if (! v->visited)
+            dfsVisit(v, res);
+    return res;
+}
+
+/*
+ * Auxiliary function that visits a vertex (v) and its adjacent, recursively.
+ * Updates a parameter with the list of visited node contents.
+ */
+template <class T>
+void Graph<T>::dfsVisit(Vertex<T> *v, vector<T> & res) const {
+    v->visited = true;
+    res.push_back(v->info);
+    for (auto & e : v->adj) {
+        auto w = e.dest;
+        if ( ! w->visited)
+            dfsVisit(w, res);
+    }
+}
+
+/****************** 2b) bfs ********************/
+
+/*
+ * Performs a breadth-first search (bfs) in a graph (this), starting
+ * from the vertex with the given source contents (source).
+ * Returns a vector with the contents of the vertices by dfs order.
+ * Follows the algorithm described in theoretical classes.
+ */
+template <class T>
+vector<T> Graph<T>::bfs(const T & source) const {
+    vector<T> res;
+    auto s = findVertex(source);
+    if (s == NULL)
+        return res;
+    queue<Vertex<T> *> q;
+    for (auto v : vertexSet)
+        v->visited = false;
+    q.push(s);
+    s->visited = true;
+    while (!q.empty()) {
+        auto v = q.front();
+        q.pop();
+        res.push_back(v->info);
+        for (auto & e : v->adj) {
+            auto w = e.dest;
+            if ( ! w->visited ) {
+                q.push(w);
+                w->visited = true;
+            }
+        }
+    }
+    return res;
+}
 
 /**************** Single Source Shortest Path algorithms ************/
 

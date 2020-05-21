@@ -1,8 +1,8 @@
-//
-// Created by ricar on 20/05/2020.
-//
+
+
 
 #include "parse.h"
+
 
 
 using namespace std;
@@ -10,7 +10,7 @@ using namespace std;
 
 extern Graph<Point> graph;
 
-void parseNodes(const string path_to_nodes) {
+void parseNodes(const string path_to_nodes,GraphViewer g) {
     string temp;
     int id;
     double x,y;
@@ -25,7 +25,7 @@ void parseNodes(const string path_to_nodes) {
 
     while (!nodes_file.eof()) {
         getline(nodes_file,temp);
-        temp_vec = decompose(temp.substr(1,temp.size() - 1),',');
+        temp_vec = decompose(temp.substr(1,temp.size() - 2),',');
         trim(temp_vec[0]);
         trim(temp_vec[1]);
         trim(temp_vec[2]);
@@ -33,16 +33,18 @@ void parseNodes(const string path_to_nodes) {
         x = stod(temp_vec[1]);
         y = stod(temp_vec[2]);
         point = Point(id,x,y);
-        cout << point << endl;
         graph.addVertex(point);
+        //g->addNode(id,(int) x,(int) y);
+        g.addNode(id,(int)x,(int)y);
     }
 }
 
-void parseEdges(const string path_to_edges) {
+void parseEdges(const string path_to_edges,GraphViewer g) {
     string temp;
     int id1,id2;
     float x1,x2,y1,y2;
     int weight;
+    int edgeid=0;
 
     vector<string> temp_vec;
 
@@ -71,13 +73,17 @@ void parseEdges(const string path_to_edges) {
 
         graph.addEdge(id1,id2,weight);
         graph.addEdge(id2,id1,weight);
+        edgeid++;
+        g.addEdge(edgeid,id1,id2,1);
+        edgeid++;
+        g.addEdge(edgeid,id2,id1,1);
     }
 }
 
-void parsePorto() {
+void parsePorto( GraphViewer g ) {
     graph = Graph<Point>();
-    parseNodes("../PortugalMaps/Porto/nodes_x_y_porto.txt");
-    parseEdges("../PortugalMaps/Porto/edges_porto.txt");
+    parseNodes("../PortugalMaps/Porto/nodes_x_y_porto.txt", g);
+    parseEdges("../PortugalMaps/Porto/edges_porto.txt",g);
 }
 
 

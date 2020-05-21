@@ -1,6 +1,4 @@
-//
-// Created by ricar on 20/05/2020.
-//
+
 #pragma once
 
 #ifndef EATEXPRESS_PARSE_H
@@ -13,12 +11,13 @@
 #include "Utils.h"
 #include "Point.h"
 #include "Graph.h"
+#include <GraphViewer/graphviewer.h>
 
 
 using namespace std;
 
-void parseNodes(const string path_to_nodes);
-void parseEdges(const string path_to_edges);
-void parsePorto();
+void parseNodes(const string path_to_nodes,GraphViewer g);
+void parseEdges(const string path_to_edges,GraphViewer g);
+void parsePorto(GraphViewer g);
 
 #endif //EATEXPRESS_PARSE_H

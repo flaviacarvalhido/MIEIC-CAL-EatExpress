@@ -8,23 +8,23 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug"/>
+				<Option working_dir="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="EATEXPRESS">
-				<Option output="C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/EATEXPRESS.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug"/>
+				<Option output="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/EATEXPRESS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/ricar/Desktop/Projeto Cal/."/>
+					<Add directory="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/."/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -33,20 +33,20 @@
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 EATEXPRESS"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 EATEXPRESS"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="EATEXPRESS/fast">
-				<Option output="C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/EATEXPRESS.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug"/>
+				<Option output="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/EATEXPRESS.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/ricar/Desktop/Projeto Cal/."/>
+					<Add directory="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/."/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -55,76 +55,106 @@
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 EATEXPRESS/fast"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 EATEXPRESS/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug"/>
+				<Option working_dir="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug"/>
+				<Option working_dir="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/ricar/Desktop/Projeto Cal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Client.cpp">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Client.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Client.h">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Client.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Deliverer.cpp">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Deliverer.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Deliverer.h">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Deliverer.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Delivery.cpp">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Delivery.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Delivery.h">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Delivery.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Graph.h">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Graph.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Restaurant.cpp">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/GraphViewer/connection.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Restaurant.h">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/GraphViewer/connection.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Utils.cpp">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/GraphViewer/edgetype.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Utils.h">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/GraphViewer/graphviewer.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Vehicle.cpp">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/GraphViewer/graphviewer.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/Vehicle.h">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/MutablePriorityQueue.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/main.cpp">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/ricar/Desktop/Projeto Cal/CMakeLists.txt">
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Vehicle.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Vehicle.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/main.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/parse.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/parse.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
