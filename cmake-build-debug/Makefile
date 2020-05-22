@@ -203,32 +203,86 @@ Delivery.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Delivery.cpp.s
 .PHONY : Delivery.cpp.s
 
-Parse.obj: Parse.cpp.obj
+GraphViewer/connection.obj: GraphViewer/connection.cpp.obj
 
-.PHONY : Parse.obj
+.PHONY : GraphViewer/connection.obj
 
 # target to build an object file
-Parse.cpp.obj:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj
-.PHONY : Parse.cpp.obj
+GraphViewer/connection.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj
+.PHONY : GraphViewer/connection.cpp.obj
 
-Parse.i: Parse.cpp.i
+GraphViewer/connection.i: GraphViewer/connection.cpp.i
 
-.PHONY : Parse.i
+.PHONY : GraphViewer/connection.i
 
 # target to preprocess a source file
-Parse.cpp.i:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.i
-.PHONY : Parse.cpp.i
+GraphViewer/connection.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.i
+.PHONY : GraphViewer/connection.cpp.i
 
-Parse.s: Parse.cpp.s
+GraphViewer/connection.s: GraphViewer/connection.cpp.s
 
-.PHONY : Parse.s
+.PHONY : GraphViewer/connection.s
 
 # target to generate assembly for a file
-Parse.cpp.s:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.s
-.PHONY : Parse.cpp.s
+GraphViewer/connection.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.s
+.PHONY : GraphViewer/connection.cpp.s
+
+GraphViewer/graphviewer.obj: GraphViewer/graphviewer.cpp.obj
+
+.PHONY : GraphViewer/graphviewer.obj
+
+# target to build an object file
+GraphViewer/graphviewer.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj
+.PHONY : GraphViewer/graphviewer.cpp.obj
+
+GraphViewer/graphviewer.i: GraphViewer/graphviewer.cpp.i
+
+.PHONY : GraphViewer/graphviewer.i
+
+# target to preprocess a source file
+GraphViewer/graphviewer.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.i
+.PHONY : GraphViewer/graphviewer.cpp.i
+
+GraphViewer/graphviewer.s: GraphViewer/graphviewer.cpp.s
+
+.PHONY : GraphViewer/graphviewer.s
+
+# target to generate assembly for a file
+GraphViewer/graphviewer.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.s
+.PHONY : GraphViewer/graphviewer.cpp.s
+
+Point.obj: Point.cpp.obj
+
+.PHONY : Point.obj
+
+# target to build an object file
+Point.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Point.cpp.obj
+.PHONY : Point.cpp.obj
+
+Point.i: Point.cpp.i
+
+.PHONY : Point.i
+
+# target to preprocess a source file
+Point.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Point.cpp.i
+.PHONY : Point.cpp.i
+
+Point.s: Point.cpp.s
+
+.PHONY : Point.s
+
+# target to generate assembly for a file
+Point.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Point.cpp.s
+.PHONY : Point.cpp.s
 
 Restaurant.obj: Restaurant.cpp.obj
 
@@ -338,6 +392,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+parse.obj: parse.cpp.obj
+
+.PHONY : parse.obj
+
+# target to build an object file
+parse.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.obj
+.PHONY : parse.cpp.obj
+
+parse.i: parse.cpp.i
+
+.PHONY : parse.i
+
+# target to preprocess a source file
+parse.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.i
+.PHONY : parse.cpp.i
+
+parse.s: parse.cpp.s
+
+.PHONY : parse.s
+
+# target to generate assembly for a file
+parse.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.s
+.PHONY : parse.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -356,9 +437,15 @@ help:
 	@echo ... Delivery.obj
 	@echo ... Delivery.i
 	@echo ... Delivery.s
-	@echo ... Parse.obj
-	@echo ... Parse.i
-	@echo ... Parse.s
+	@echo ... GraphViewer/connection.obj
+	@echo ... GraphViewer/connection.i
+	@echo ... GraphViewer/connection.s
+	@echo ... GraphViewer/graphviewer.obj
+	@echo ... GraphViewer/graphviewer.i
+	@echo ... GraphViewer/graphviewer.s
+	@echo ... Point.obj
+	@echo ... Point.i
+	@echo ... Point.s
 	@echo ... Restaurant.obj
 	@echo ... Restaurant.i
 	@echo ... Restaurant.s
@@ -371,6 +458,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... parse.obj
+	@echo ... parse.i
+	@echo ... parse.s
 .PHONY : help
 
 

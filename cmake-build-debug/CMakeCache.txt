@@ -112,7 +112,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/EATEXPRESS
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Projeto_Cal
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/ld.exe
@@ -243,6 +243,12 @@ EATEXPRESS_BINARY_DIR:STATIC=C:/Users/joao/Desktop/CAL2/cmake-build-debug
 
 //Value Computed by CMake
 EATEXPRESS_SOURCE_DIR:STATIC=C:/Users/joao/Desktop/CAL2
+
+//Value Computed by CMake
+Projeto_Cal_BINARY_DIR:STATIC=C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/cmake-build-debug
+
+//Value Computed by CMake
+Projeto_Cal_SOURCE_DIR:STATIC=C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS
 
 
 ########################

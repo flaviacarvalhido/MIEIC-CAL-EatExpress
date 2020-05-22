@@ -103,10 +103,28 @@
 		<Unit filename="C:/Users/joao/Desktop/CAL2/Graph.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/joao/Desktop/CAL2/Parse.cpp">
+		<Unit filename="C:/Users/joao/Desktop/CAL2/GraphViewer/connection.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/joao/Desktop/CAL2/Parse.h">
+		<Unit filename="C:/Users/joao/Desktop/CAL2/GraphViewer/connection.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/GraphViewer/edgetype.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/GraphViewer/graphviewer.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/GraphViewer/graphviewer.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/MutablePriorityQueue.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/Point.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/Point.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
 		<Unit filename="C:/Users/joao/Desktop/CAL2/Restaurant.cpp">
@@ -128,6 +146,12 @@
 			<Option target="EATEXPRESS"/>
 		</Unit>
 		<Unit filename="C:/Users/joao/Desktop/CAL2/main.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/parse.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/parse.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
 		<Unit filename="C:/Users/joao/Desktop/CAL2/CMakeLists.txt">

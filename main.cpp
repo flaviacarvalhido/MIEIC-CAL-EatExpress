@@ -2,12 +2,16 @@
 
 #include <string>
 #include <vector>
+#include <GraphViewer/graphviewer.h>
 #include "Client.h"
 #include "Restaurant.h"
 #include "Deliverer.h"
 #include "Vehicle.h"
 #include "Delivery.h"
 #include "Utils.h"
+#include "Point.h"
+#include "Graph.h"
+#include "parse.h"
 
 using namespace std;
 
@@ -16,6 +20,7 @@ vector<Client> clients;
 vector<Deliverer> deliverers;
 vector<Restaurant> restaurants;
 vector<Delivery> deliveries;
+Graph<Point> graph;
 
 
 void readClientFile(string file) {
@@ -43,6 +48,7 @@ void readRestaurantFile(string file) {
         restaurants.push_back(r);
     }
 }
+
 
 void readDeliveriesFile(string file) {
     string temp;
@@ -106,13 +112,15 @@ void readDelivererFile(string file) {
 
 int main()
 {
-	//LER GRAFOS
+    cout << "Welcome to EatExpress!" << endl;
+    cout << endl;
+
+
+
+
 
 	string filename;
 	fstream file;
-
-	cout << "Welcome to EatExpress!" << endl;
-	cout << endl;
 
 	cout << "Input the name of the file of deliveries you want to read (input 0 to leave): " << endl;
 
@@ -134,4 +142,62 @@ int main()
     readRestaurantFile("../Restaurants.txt");
 
 
+    //VER SE ID DOS RESTAURANTES DAS DELIVERIES É UM RESTAURANTE NO RESTAURANTES TXT, se não erro
+    bool found=false;
+    for(unsigned int i =0; i<deliveries.size();i++){
+        for(unsigned int j=0; j<restaurants.size();j++){
+            if(deliveries[i].getRestaurant().getId() == restaurants[j].getId()){
+                found =true;
+                break;
+            }
+        }
+        if(!found){
+            cout << "One of the deliveries doesn't have a restaurant as its origin. Please check the ID of the restaurant." << endl;
+            return -1;
+        }
+    }
+
+
+    //LER GRAFOS
+    //iniciar GRAPHVIEWER
+    GraphViewer gv = GraphViewer(900, 900, false);
+    gv.createWindow(900, 900);
+    gv.defineVertexColor("blue");
+    gv.defineEdgeColor("black");
+    parsePorto(gv);
+
+
+
+
+    //CASO BASE: UMA ENTREGA, UM RESTAURANTE, UM ESTAFETA, UM CLIENTE
+    if(deliveries.size() == 1){
+        vector<Point> res;
+        bool found=false;
+
+        res=graph.bfs(deliveries[0].getRestaurant().getId());
+
+        for(unsigned int i=0;i<res.size();i++){
+            if(res[i].getID() == deliveries[0].getClient().getId()){
+                found=true;
+                break;
+            }
+        }
+        if(!found){
+            cout << "Client address is not reacheable from restaurant. Delivery cannot be made" << endl;
+            return -2;
+        }
+
+        cout << "Calculating route, please wait..." << endl;
+
+        //TODO:bidirectional dijkstra
+        vector<Point> perfectPath;
+
+        graph.dijkstraShortestPath(deliveries[0].getRestaurant().getId()); //for now its just unidirectional dijkstra
+        perfectPath = graph.getPath(deliveries[0].getRestaurant().getId(),deliveries[0].getClient().getId());
+
+    }
+
+
+    system("pause");
+    return 0;
 }
