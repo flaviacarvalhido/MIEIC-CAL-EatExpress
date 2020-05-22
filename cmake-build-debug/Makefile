@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS"
+CMAKE_SOURCE_DIR = C:\Users\joao\Desktop\CAL2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\joao\Desktop\CAL2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles" "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -202,6 +202,33 @@ Delivery.s: Delivery.cpp.s
 Delivery.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Delivery.cpp.s
 .PHONY : Delivery.cpp.s
+
+Parse.obj: Parse.cpp.obj
+
+.PHONY : Parse.obj
+
+# target to build an object file
+Parse.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj
+.PHONY : Parse.cpp.obj
+
+Parse.i: Parse.cpp.i
+
+.PHONY : Parse.i
+
+# target to preprocess a source file
+Parse.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.i
+.PHONY : Parse.cpp.i
+
+Parse.s: Parse.cpp.s
+
+.PHONY : Parse.s
+
+# target to generate assembly for a file
+Parse.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.s
+.PHONY : Parse.cpp.s
 
 Restaurant.obj: Restaurant.cpp.obj
 
@@ -329,6 +356,9 @@ help:
 	@echo ... Delivery.obj
 	@echo ... Delivery.i
 	@echo ... Delivery.s
+	@echo ... Parse.obj
+	@echo ... Parse.i
+	@echo ... Parse.s
 	@echo ... Restaurant.obj
 	@echo ... Restaurant.i
 	@echo ... Restaurant.s

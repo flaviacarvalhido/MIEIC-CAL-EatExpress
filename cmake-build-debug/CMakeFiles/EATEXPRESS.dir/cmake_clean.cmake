@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/EATEXPRESS.dir/Client.cpp.obj"
   "CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj"
   "CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj"
+  "CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj"
   "CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj"
   "CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj"
   "CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj"
