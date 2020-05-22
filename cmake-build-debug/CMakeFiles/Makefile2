@@ -52,12 +52,12 @@ CMAKE_BINARY_DIR = "C:\Users\ricar\Desktop\Projeto Cal\cmake-build-debug"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Projeto_Cal.dir/all
+all: CMakeFiles/EATEXPRESS.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Projeto_Cal.dir/clean
+clean: CMakeFiles/EATEXPRESS.dir/clean
 
 .PHONY : clean
 
@@ -67,31 +67,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/Projeto_Cal.dir
+# Target rules for target CMakeFiles/EATEXPRESS.dir
 
 # All Build rule for target.
-CMakeFiles/Projeto_Cal.dir/all:
-	$(MAKE) -f CMakeFiles\Projeto_Cal.dir\build.make CMakeFiles/Projeto_Cal.dir/depend
-	$(MAKE) -f CMakeFiles\Projeto_Cal.dir\build.make CMakeFiles/Projeto_Cal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ricar\Desktop\Projeto Cal\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Projeto_Cal"
-.PHONY : CMakeFiles/Projeto_Cal.dir/all
+CMakeFiles/EATEXPRESS.dir/all:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/depend
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ricar\Desktop\Projeto Cal\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target EATEXPRESS"
+.PHONY : CMakeFiles/EATEXPRESS.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Projeto_Cal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ricar\Desktop\Projeto Cal\cmake-build-debug\CMakeFiles" 10
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Projeto_Cal.dir/all
+CMakeFiles/EATEXPRESS.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ricar\Desktop\Projeto Cal\cmake-build-debug\CMakeFiles" 12
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/EATEXPRESS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ricar\Desktop\Projeto Cal\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/Projeto_Cal.dir/rule
+.PHONY : CMakeFiles/EATEXPRESS.dir/rule
 
 # Convenience name for target.
-Projeto_Cal: CMakeFiles/Projeto_Cal.dir/rule
+EATEXPRESS: CMakeFiles/EATEXPRESS.dir/rule
 
-.PHONY : Projeto_Cal
+.PHONY : EATEXPRESS
 
 # clean rule for target.
-CMakeFiles/Projeto_Cal.dir/clean:
-	$(MAKE) -f CMakeFiles\Projeto_Cal.dir\build.make CMakeFiles/Projeto_Cal.dir/clean
-.PHONY : CMakeFiles/Projeto_Cal.dir/clean
+CMakeFiles/EATEXPRESS.dir/clean:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/clean
+.PHONY : CMakeFiles/EATEXPRESS.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
