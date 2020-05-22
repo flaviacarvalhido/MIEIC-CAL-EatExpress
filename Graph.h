@@ -38,8 +38,10 @@ public:
     Vertex(T in);
     bool operator<(Vertex<T> & vertex) const; // // required by MutablePriorityQueue
     T getInfo() const;
+    vector <Edge<T>> getAdj();
     double getDist() const;
     Vertex *getPath() const;
+    bool removeEdgeTo(Vertex<T> *d);
     friend class Graph<T>;
     friend class MutablePriorityQueue<Vertex<T>>;
 };
@@ -60,6 +62,11 @@ void Vertex<T>::addEdge(Vertex<T> *d, double w) {
 template <class T>
 bool Vertex<T>::operator<(Vertex<T> & vertex) const {
     return this->dist < vertex.dist;
+}
+
+template <class T>
+vector <Edge<T>> Vertex<T>::getAdj() {
+    return adj;
 }
 
 template <class T>
@@ -92,6 +99,13 @@ public:
     friend class Graph<T>;
     friend class Vertex<T>;
 
+    Vertex<T> * getOrig(){
+        return orig;
+    };
+    Vertex<T> * getDest(){
+        return dest;
+    };
+
     // Fp07
     double getWeight() const;
 };
@@ -110,7 +124,6 @@ double Edge<T>::getWeight() const {
 template <class T>
 class Graph {
     vector<Vertex<T> *> vertexSet;    // vertex set
-
     // Fp05
     Vertex<T> * initSingleSource(const T &orig);
     bool relax(Vertex<T> *v, Vertex<T> *w, double weight);
@@ -130,11 +143,18 @@ public:
     void dfsVisit(Vertex<T> *v, vector<T> & res) const;
     vector<T> bfs(const T & source) const;
 
+    bool removeEdge();
+
+
     // Fp05 - single source
     void dijkstraShortestPath(const T &s);
     void unweightedShortestPath(const T &s);
     void bellmanFordShortestPath(const T &s);
     vector<T> getPath(const T &origin, const T &dest) const;
+
+    Vertex<T>* findIdxVertex(int i);
+
+    bool removeEdge(const T &sourc, const T &dest);
 
     // Fp05 - all pairs
     void floydWarshallShortestPath();
@@ -154,6 +174,25 @@ int Graph<T>::getNumVertex() const {
 }
 
 template <class T>
+bool Vertex<T>::removeEdgeTo(Vertex<T> *d) {
+    for (auto it = adj.begin(); it != adj.end(); it++){
+        if (it->dest->info == d->info) {
+            adj.erase(it);
+            return true;
+        }
+    }
+    return false;
+}
+
+template <class T>
+bool Graph<T>::removeEdge(const T &sourc, const T &dest) {
+    Vertex<T>* s = findVertex(sourc);
+    Vertex<T>* d = findVertex(dest);
+    if (s == NULL || d == NULL) return false;
+    return s->removeEdgeTo(d);
+}
+
+template <class T>
 vector<Vertex<T> *> Graph<T>::getVertexSet() const {
     return vertexSet;
 }
@@ -167,6 +206,11 @@ Vertex<T> * Graph<T>::findVertex(const T &in) const {
         if (v->info == in)
             return v;
     return nullptr;
+}
+
+template <class T>
+Vertex<T> * Graph<T>::findIdxVertex(int i) {
+    return vertexSet.at(i);
 }
 
 /*
@@ -310,17 +354,17 @@ inline bool Graph<T>::relax(Vertex<T> *v, Vertex<T> *w, double weight) {
 
 template<class T>
 void Graph<T>::dijkstraShortestPath(const T &origin) {
-    auto s = initSingleSource(origin);
-    MutablePriorityQueue<Vertex<T>> q;
-    q.insert(s);
-    while( ! q.empty() ) {
-        auto v = q.extractMin();
-        for(auto e : v->adj) {
-            auto oldDist = e.dest->dist;
-            if (relax(v, e.dest, e.weight)) {
-                if (oldDist == INF)
-                    q.insert(e.dest);
-                else
+                    auto s = initSingleSource(origin);
+                    MutablePriorityQueue<Vertex<T>> q;
+                    q.insert(s);
+                    while( ! q.empty() ) {
+                        auto v = q.extractMin();
+                        for(auto e : v->adj) {
+                            auto oldDist = e.dest->dist;
+                            if (relax(v, e.dest, e.weight)) {
+                                if (oldDist == INF)
+                                    q.insert(e.dest);
+                                else
                     q.decreaseKey(e.dest);
             }
         }

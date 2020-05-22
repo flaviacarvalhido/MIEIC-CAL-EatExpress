@@ -1,6 +1,4 @@
 
-
-
 #include "parse.h"
 
 
@@ -10,7 +8,7 @@ using namespace std;
 
 extern Graph<Point> graph;
 
-void parseNodes(const string path_to_nodes,GraphViewer g) {
+void parseNodes(const string path_to_nodes) {
     string temp;
     int id;
     double x,y;
@@ -34,17 +32,17 @@ void parseNodes(const string path_to_nodes,GraphViewer g) {
         y = stod(temp_vec[2]);
         point = Point(id,x,y);
         graph.addVertex(point);
+        //cout << graph.getNumVertex() << endl;
         //g->addNode(id,(int) x,(int) y);
-        g.addNode(id,(int)x,(int)y);
+        //cout << graph.getNumVertex() << endl;
     }
 }
 
-void parseEdges(const string path_to_edges,GraphViewer g) {
+void parseEdges(const string path_to_edges) {
     string temp;
     int id1,id2;
     float x1,x2,y1,y2;
     int weight;
-    int edgeid=0;
 
     vector<string> temp_vec;
 
@@ -73,19 +71,93 @@ void parseEdges(const string path_to_edges,GraphViewer g) {
 
         graph.addEdge(id1,id2,weight);
         graph.addEdge(id2,id1,weight);
-        edgeid++;
-        g.addEdge(edgeid,id1,id2,1);
-        g.setEdgeWeight(edgeid,weight);
-        edgeid++;
-        g.addEdge(edgeid,id2,id1,1);
-        g.setEdgeWeight(edgeid,weight);
+
     }
 }
 
-void parsePorto( GraphViewer g ) {
+void parsePorto() {
     graph = Graph<Point>();
-    parseNodes("../PortugalMaps/Porto/nodes_x_y_porto.txt", g);
-    parseEdges("../PortugalMaps/Porto/edges_porto.txt",g);
+    parseNodes("../PortugalMaps/Porto/nodes_x_y_porto.txt");
+    parseEdges("../PortugalMaps/Porto/edges_porto.txt");
+}
+
+GraphViewer buildGraphViewer(Graph<Point> & temp_graph) {
+    GraphViewer gv = GraphViewer(900, 900, false);
+    gv.createWindow(900, 900);
+    gv.defineVertexColor("blue");
+    gv.defineEdgeColor("black");
+
+    double yPercent, xPercent;
+    cout << graph.getNumVertex() << endl;
+    Vertex<Point>* p = graph.findIdxVertex(0);
+
+    double minX = p->getInfo().getX();
+    double minY = p->getInfo().getY();
+    double maxX = p->getInfo().getX();
+    double maxY = p->getInfo().getY();
+
+    for (int i = 1; i < graph.getNumVertex(); i++) {
+
+        p = graph.findIdxVertex(i);
+
+        if (p->getInfo().getX() > maxX) {
+            maxX = p->getInfo().getX();
+        } else if (p->getInfo().getX() < minX) {
+            minX = p->getInfo().getX();
+        }
+
+        if (p->getInfo().getY() > maxY) {
+            maxY = p->getInfo().getY();
+        } else if (p->getInfo().getY() < minY) {
+            minY = p->getInfo().getY();
+        }
+    }
+
+
+    double graphHeight = maxY - minY;
+    double graphWidth = maxX - minX;
+
+    for (int i = 0; i < graph.getNumVertex(); i++) {
+        Vertex<Point>* p = graph.findIdxVertex(i);
+
+        xPercent = (p->getInfo().getX() - minX) / graphWidth;
+        yPercent = 1.0 - ((p->getInfo().getY() - minY) / graphHeight);
+
+        gv.addNode(p->getInfo().getID(), (int) (xPercent * 4000), (int) (yPercent * 2000));
+
+        /*switch (p.getType()) {
+            case WASTE_DISPOSAL:
+                gv.setVertexColor(p.getInfo().getID(), "orange");
+                break;
+            case RECYCLING_CONTAINER:
+                gv.setVertexColor(p.getInfo().getID(), "green");
+                break;
+        }*/
+        gv.setVertexColor(p->getInfo().getID(), "orange");
+
+        // ---- drawing starting and ending points
+        /*if (isStartingNode(p))
+            gv.setVertexColor(p.getInfo().getID(), "cyan");
+        if (isFinalNode(p))
+            gv.setVertexColor(p.getInfo().getID(), "red");*/
+    }
+
+
+    vector<Edge<Point>> edges;
+    int id =0;
+    for (size_t i = 0; i < graph.getNumVertex(); i++) {
+        Vertex<Point>* p = graph.findIdxVertex(i);
+
+        edges = p->getAdj();
+        for (Edge<Point> e : edges) {
+            id++;
+            gv.addEdge(id, p->getInfo().getID(), e.getDest()->getInfo().getID(), EdgeType::DIRECTED);
+        }
+    }
+
+    gv.rearrange();
+
+    return gv;
 }
 
 

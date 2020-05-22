@@ -160,17 +160,18 @@ int main()
 
     //LER GRAFOS
     //iniciar GRAPHVIEWER
-    GraphViewer gv = GraphViewer(900, 900, false);
-    gv.createWindow(900, 900);
-    gv.defineVertexColor("blue");
-    gv.defineEdgeColor("black");
-    parsePorto(gv);
+    parsePorto();
+    GraphViewer gv = GraphViewer(900,900,false);
+    gv = buildGraphViewer(graph);
+    for(int i=0;i<restaurants.size();i++){
+        gv.setVertexColor(restaurants[i].getId(), "cyan");
+    }
 
 
 
 
     //CASO BASE: UMA ENTREGA, UM RESTAURANTE, UM ESTAFETA, UM CLIENTE
-    if(deliveries.size() == 1){
+    if(deliveries.size() == 1) {
         vector<Point> res;
         bool found=false;
 
@@ -194,7 +195,11 @@ int main()
 
         graph.dijkstraShortestPath(deliveries[0].getRestaurant().getId()); //for now its just unidirectional dijkstra
         perfectPath = graph.getPath(deliveries[0].getRestaurant().getId(),deliveries[0].getClient().getId());
-
+        for(int i=0;i<perfectPath.size();i++){
+            gv.setVertexColor(perfectPath[i].getID(), "green");
+        }
+        gv.setVertexColor(perfectPath[0].getID(), "red");
+        gv.setVertexColor(perfectPath[perfectPath.size()-1].getID(), "red");
     }
 
 

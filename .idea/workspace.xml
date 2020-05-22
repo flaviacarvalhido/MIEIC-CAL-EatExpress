@@ -11,393 +11,91 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed75504d-5c84-4aaa-917d-6de538a611a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GraphViewer/GraphViewerController.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/connection.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/connection.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/_ficha_j_u_n_g_8cpp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/annotated.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/arrowdown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/arrowright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/bc_s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/bdwn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/class_connection-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/class_connection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/class_edge_type-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/class_edge_type.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/class_graph_viewer-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/class_graph_viewer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/closed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/connection_8cpp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/connection_8h.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/connection_8h_source.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/dir_68267d1309a1af8e8297ef4c3efbcdba.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/doc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/doxygen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/doxygen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/dynsections.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/edgetype_8h.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/edgetype_8h_source.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/files.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/folderclosed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/folderopen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/functions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/functions_func.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/functions_vars.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/globals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/globals_defs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/globals_func.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/graphviewer_8cpp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/graphviewer_8h.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/graphviewer_8h_source.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/hierarchy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/nav_f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/nav_g.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/nav_h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_10.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_11.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_12.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_b.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_c.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_d.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_e.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_f.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/all_f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/classes_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/classes_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/classes_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/classes_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/classes_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/classes_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/defines_a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/files_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/files_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/files_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/files_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/files_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/files_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/files_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/files_3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/functions_a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/mag_sel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/nomatches.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/search_l.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/search_m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/search_r.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/searchdata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/search/variables_8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/splitbar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/struct_graph_viewer_1_1_custom_exception-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/struct_graph_viewer_1_1_custom_exception.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/sync_off.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/sync_on.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/tab_a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/tab_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/tab_h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/tab_s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/docs/html/tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/edgetype.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/graphviewer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraphViewer/graphviewer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MutablePriorityQueue.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Point.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Point.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Aveiro/edges_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Aveiro/nodes_lat_lon_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Aveiro/nodes_x_y_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Braga/edges_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Braga/nodes_lat_lon_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Braga/nodes_x_y_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Coimbra/edges_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Coimbra/nodes_lat_lon_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Coimbra/nodes_x_y_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Ermesinde/edges_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Ermesinde/nodes_lat_lon_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Ermesinde/nodes_x_y_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Fafe/edges_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Fafe/nodes_lat_lon_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Fafe/nodes_x_y_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Gondomar/edges_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Gondomar/nodes_lat_lon_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Gondomar/nodes_x_y_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Lisboa/edges_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Lisboa/nodes_lat_lon_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Lisboa/nodes_x_y_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Maia/edges_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Maia/nodes_lat_lon_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Maia/nodes_x_y_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Porto/edges_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Porto/nodes_lat_lon_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Porto/nodes_x_y_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Portugal/edges_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Portugal/nodes_lat_lon_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Portugal/nodes_x_y_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Viseu/edges_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Viseu/nodes_lat_lon_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortugalMaps/Viseu/nodes_x_y_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t01_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t02_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t03_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t04_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t05_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t06_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t07_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t08_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t09_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t10_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Aveiro/t11_tags_aveiro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t01_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t02_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t03_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t04_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t05_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t06_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t07_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t08_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t09_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t10_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Braga/t11_tags_braga.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t01_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t02_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t03_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t04_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t05_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t06_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t07_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t08_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t09_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t10_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Coimbra/t11_tags_coimbra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t01_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t02_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t03_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t04_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t05_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t06_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t07_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t08_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t09_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t10_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Ermesinde/t11_tags_ermesinde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t01_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t02_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t03_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t04_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t05_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t06_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t07_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t08_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t09_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t10_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Fafe/t11_tags_fafe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t01_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t02_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t03_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t04_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t05_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t06_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t07_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t08_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t09_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t10_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Gondomar/t11_tags_gondomar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t01_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t02_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t03_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t04_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t05_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t06_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t07_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t08_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t09_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t10_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Lisboa/t11_tags_lisboa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t01_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t02_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t03_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t04_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t05_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t06_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t07_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t08_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t09_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t10_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Maia/t11_tags_maia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t01_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t02_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t03_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t04_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t05_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t06_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t07_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t08_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t09_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t10_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Porto/t11_tags_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t01_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t02_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t03_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t04_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t05_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t06_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t07_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t08_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t09_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t10_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Portugal/t11_tags_portugal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/STCPRoutes/exemplo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/STCPRoutes/metro_routes_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/STCPRoutes/stcp_routes_porto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t01_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t02_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t03_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t04_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t05_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t06_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t07_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t08_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t09_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t10_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagExamples/Viseu/t11_tags_viseu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Point.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/parse.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/includes_CXX.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/linklibs.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/objects1.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Projeto_Cal.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Projeto_Cal.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parse.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parse.h" afterDir="false" />
+    <list default="true" id="9868d7d2-fb49-470b-a3e6-a41adebd3e14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.vs/CMake Overview" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Projeto Cal/v16/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Projeto Cal/v16/Browse.VC.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Projeto Cal/v16/ipch/AutoPCH/8c79dbd2457b7df2/PARSE.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Projeto Cal/v16/ipch/AutoPCH/9752b5397279702c/MAIN.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Projeto Cal/v16/ipch/AutoPCH/f59cb4d7259d05b/CONNECTION.ipch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/query/client-MicrosoftVS/query.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/cache-v2-b43461afca979f4ba3f6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/cmakeFiles-v1-7b4e2cdbaf41cb2abeaa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/codemodel-v2-72dfdfcd5689dc1247c8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/index-2020-05-22T13-11-19-0295.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/target-EATEXPRESS-Debug-53a3634939fc12522a07.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CMakeRCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CompilerIdC/CMakeCCompilerId.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CompilerIdC/CMakeCCompilerId.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/ShowIncludes/foo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/ShowIncludes/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/ShowIncludes/main.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/VSInheritEnvironments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deliveries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Deliveries.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/Graph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parse.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parse.h" beforeDir="false" afterPath="$PROJECT_DIR$/Parse.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Client.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Client.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Point.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Point.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/linklibs.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/linklibs.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/parse.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EATEXPRESS.dir/parse.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projeto_Cal.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/EATEXPRESS.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EATEXPRESS.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/EATEXPRESS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EATEXPRESS.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
@@ -454,7 +152,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="744248e4-1faa-4583-8151-58f7387709ae" name="Default Changelist" comment="" />
+      <changelist id="9868d7d2-fb49-470b-a3e6-a41adebd3e14" name="Default Changelist" comment="" />
       <created>1589993547713</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -467,6 +165,7 @@
       <workItem from="1590058994395" duration="6333000" />
       <workItem from="1590070078878" duration="39000" />
       <workItem from="1590070121296" duration="8919000" />
+      <workItem from="1590181208191" duration="6155000" />
     </task>
     <servers />
   </component>

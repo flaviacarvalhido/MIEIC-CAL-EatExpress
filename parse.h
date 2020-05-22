@@ -16,8 +16,9 @@
 
 using namespace std;
 
-void parseNodes(const string path_to_nodes,GraphViewer g);
-void parseEdges(const string path_to_edges,GraphViewer g);
-void parsePorto(GraphViewer g);
+void parseNodes(const string path_to_nodes);
+void parseEdges(const string path_to_edges);
+void parsePorto();
+GraphViewer buildGraphViewer(Graph<Point> & temp_graph);
 
 #endif //EATEXPRESS_PARSE_H
