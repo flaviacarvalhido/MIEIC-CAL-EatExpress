@@ -48,26 +48,6 @@ edgetype.h
 connection.h
 ../GraphViewer/connection.h
 
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Client.h
-string
--
-fstream
--
-
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Deliverer.h
-Vehicle.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Vehicle.h
-
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Delivery.h
-vector
--
-Client.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Client.h
-Restaurant.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h
-Deliverer.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Deliverer.h
-
 C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Graph.h
 iostream
 -
@@ -92,43 +72,13 @@ C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
 ostream
 -
 
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h
-
 C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
 string
 -
 vector
 -
 
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Vehicle.h
-string
--
-
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/main.cpp
-iostream
--
-string
--
-vector
--
-GraphViewer/graphviewer.h
--
-Client.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Client.h
-Restaurant.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h
-Deliverer.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Deliverer.h
-Vehicle.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Vehicle.h
-Delivery.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Delivery.h
-Utils.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
-Point.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
-Graph.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Graph.h
+C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/parse.cpp
 parse.h
 C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/parse.h
 

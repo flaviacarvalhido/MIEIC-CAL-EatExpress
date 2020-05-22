@@ -75,8 +75,10 @@ void parseEdges(const string path_to_edges,GraphViewer g) {
         graph.addEdge(id2,id1,weight);
         edgeid++;
         g.addEdge(edgeid,id1,id2,1);
+        g.setEdgeWeight(edgeid,weight);
         edgeid++;
         g.addEdge(edgeid,id2,id1,1);
+        g.setEdgeWeight(edgeid,weight);
     }
 }
 
