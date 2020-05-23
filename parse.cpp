@@ -120,26 +120,14 @@ GraphViewer buildGraphViewer(Graph<Point> & temp_graph) {
     for (int i = 0; i < graph.getNumVertex(); i++) {
         Vertex<Point>* p = graph.findIdxVertex(i);
 
-        xPercent = (p->getInfo().getX() - minX) / graphWidth;
-        yPercent = 1.0 - ((p->getInfo().getY() - minY) / graphHeight);
+        if(p->getVisited()) {                   //only prints reachable vertexes
+            xPercent = (p->getInfo().getX() - minX) / graphWidth;
+            yPercent = 1.0 - ((p->getInfo().getY() - minY) / graphHeight);
 
-        gv.addNode(p->getInfo().getID(), (int) (xPercent * 4000), (int) (yPercent * 2000));
+            gv.addNode(p->getInfo().getID(), (int) (xPercent * 4000), (int) (yPercent * 2000));
 
-        /*switch (p.getType()) {
-            case WASTE_DISPOSAL:
-                gv.setVertexColor(p.getInfo().getID(), "orange");
-                break;
-            case RECYCLING_CONTAINER:
-                gv.setVertexColor(p.getInfo().getID(), "green");
-                break;
-        }*/
-        gv.setVertexColor(p->getInfo().getID(), "orange");
-
-        // ---- drawing starting and ending points
-        /*if (isStartingNode(p))
-            gv.setVertexColor(p.getInfo().getID(), "cyan");
-        if (isFinalNode(p))
-            gv.setVertexColor(p.getInfo().getID(), "red");*/
+            gv.setVertexColor(p->getInfo().getID(), "orange");
+        }
     }
 
 
@@ -148,10 +136,13 @@ GraphViewer buildGraphViewer(Graph<Point> & temp_graph) {
     for (size_t i = 0; i < graph.getNumVertex(); i++) {
         Vertex<Point>* p = graph.findIdxVertex(i);
 
-        edges = p->getAdj();
-        for (Edge<Point> e : edges) {
-            id++;
-            gv.addEdge(id, p->getInfo().getID(), e.getDest()->getInfo().getID(), EdgeType::DIRECTED);
+        if(p->getVisited()) {               //only prints reachable vertexes
+            edges = p->getAdj();
+            for (Edge<Point> e : edges) {
+
+                id++;
+                gv.addEdge(id, p->getInfo().getID(), e.getDest()->getInfo().getID(), EdgeType::DIRECTED);
+            }
         }
     }
 

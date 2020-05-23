@@ -29,7 +29,10 @@ void Company::readDeliveriesFile(string file) {
     while (!delivery_file.eof()) {
         Delivery d = Delivery();
         getline(delivery_file, temp);
-        if (temp != "::::::::::") d.setClient(Client(mstoi(temp)));
+        if (temp != "::::::::::") {
+            d.setClient(Client(mstoi(temp)));
+            clients.push_back(Client(mstoi(temp)));
+        }
         else {
             getline(delivery_file, temp);
             d.setClient(Client(mstoi(temp)));
@@ -37,6 +40,7 @@ void Company::readDeliveriesFile(string file) {
         }
         getline(delivery_file, temp);
         d.setRestaurant(Restaurant(mstoi(temp)));
+        deliveryRestaurant.push_back(Restaurant(mstoi(temp)));
         getline(delivery_file, temp);
         temp_temp_vec = decompose(temp, ',');
 
@@ -95,5 +99,14 @@ vector<Restaurant> Company::getRestaurants() {
 vector<Delivery> Company::getDeliveries() {
     return deliveries;
 }
+
+vector<Restaurant> Company::getdeliveryRestaurant() {
+    return deliveryRestaurant;
+}
+
+void Company::erasedeliveryRestaurant(int i) {
+    deliveryRestaurant.erase(deliveryRestaurant.begin()+i);
+}
+
 
 

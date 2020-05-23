@@ -19,6 +19,7 @@ private:
     vector<Deliverer> deliverers;
     vector<Restaurant> restaurants;
     vector<Delivery> deliveries;
+    vector<Restaurant> deliveryRestaurant;
 
 public:
     void readRestaurantFile(string file);
@@ -28,5 +29,7 @@ public:
     vector<Deliverer> getDeliverers();
     vector<Restaurant> getRestaurants();
     vector<Delivery> getDeliveries();
+    vector<Restaurant> getdeliveryRestaurant();
+    void erasedeliveryRestaurant(int i);
 };
 #endif //EATEXPRESS_COMPANY_H

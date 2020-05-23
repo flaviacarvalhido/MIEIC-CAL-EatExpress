@@ -10,7 +10,7 @@
 #include <limits>
 #include <algorithm>
 #include <unordered_set>
-#include <thread>
+#include <math.h>
 #include "MutablePriorityQueue.h"
 
 using namespace std;
@@ -42,6 +42,11 @@ public:
     vector <Edge<T>> getAdj();
     double getDist() const;
     Vertex *getPath() const;
+    bool getVisited();
+
+    void setDist(int i);
+    void setPath(Vertex<T> *v);
+
     bool removeEdgeTo(Vertex<T> *d);
     friend class Graph<T>;
     friend class MutablePriorityQueue<Vertex<T>>;
@@ -78,6 +83,21 @@ T Vertex<T>::getInfo() const {
 template <class T>
 double Vertex<T>::getDist() const {
     return this->dist;
+}
+
+template <class T>
+bool Vertex<T>::getVisited() {
+    return visited;
+}
+
+template <class T>
+void Vertex<T>::setDist(int i){
+    this->dist=i;
+}
+
+template <class T>
+void Vertex<T>::setPath(Vertex<T> *v){
+    this->path=v;
 }
 
 template <class T>
@@ -140,6 +160,7 @@ public:
     int getNumVertex() const;
     vector<Vertex<T> *> getVertexSet() const;
 
+
     vector<T> dfs() const;
     void dfsVisit(Vertex<T> *v, vector<T> & res) const;
     vector<T> bfs(const T & source) const;
@@ -170,8 +191,7 @@ public:
 
 
 
-    vector<Vertex<T> *> Astar(Graph<T> *graph, const T &origin, const T &dest);
-
+    vector<T> Astar(const T &origin, const T &dest);
 
     bool aStarRelax(Vertex<T> *v, Vertex<T> *w, Vertex<T> *dest, double weight);
 };
@@ -205,6 +225,7 @@ template <class T>
 vector<Vertex<T> *> Graph<T>::getVertexSet() const {
     return vertexSet;
 }
+
 
 /*
  * Auxiliary function to find a vertex with a given content.
@@ -529,11 +550,11 @@ vector<T> Graph<T>::getfloydWarshallPath(const T &orig, const T &dest) const{
     return res;
 }
 template <class T>
-vector<Vertex<T> *> Graph<T>::Astar(Graph<T> * graph, const T &origin, const T &dest){
+vector<T> Graph<T>::Astar( const T &origin, const T &dest){
 
-    vector<Vertex<T> *> result;
-    auto org = graph->initSingleSource(origin);
-    auto d = graph->findVertex(dest);
+    vector<T> result;
+    auto org = initSingleSource(origin);
+    auto d = findVertex(dest);
     MutablePriorityQueue<Vertex<T>> q;
     q.insert(org);
 
@@ -541,12 +562,12 @@ vector<Vertex<T> *> Graph<T>::Astar(Graph<T> * graph, const T &origin, const T &
         auto v = q.extractMin();
 
         if(v == d)
-            return graph->getPath(origin, dest);
+            return getPath(origin, dest);
 
         for(auto e : v->getAdj()) {
 
             auto oldDist = e.getDest()->getDist();
-            if (aStarEuclidianRelax(v, e.getDest(), d, e.getWeight())) {
+            if (aStarRelax(v, e.getDest(), d, e.getWeight())) {
                 if (oldDist == INF)
                     q.insert(e.getDest());
                 else
@@ -559,7 +580,8 @@ vector<Vertex<T> *> Graph<T>::Astar(Graph<T> * graph, const T &origin, const T &
 }
 template <class T>
 bool Graph<T>::aStarRelax(Vertex<T> *v, Vertex<T> *w, Vertex<T> *dest, double weight) {
-    double heuristic = v->getDist() - v->getEuclideanDist(dest) + weight + w->getEuclideanDist(dest);
+    double heuristic = v->getDist() - sqrt(pow(dest->getInfo().getX() - v->getInfo().getY(), 2) + pow(dest->getInfo().getX() - v->getInfo().getY(), 2)) + weight + sqrt(pow(dest->getInfo().getX() - w->getInfo().getY(), 2) + pow(dest->getInfo().getX() - w->getInfo().getY(), 2));
+
     if (w->getDist() > heuristic) {
         w->setDist(heuristic);
         w->setPath(v);

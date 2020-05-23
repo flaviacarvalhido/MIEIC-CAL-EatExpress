@@ -5,20 +5,23 @@ set(CMAKE_CXX_STANDARD 14)
 link_libraries(ws2_32 wsock32)
 
 include_directories(.)
+include_directories(GraphViewer)
 
 add_executable(EATEXPRESS
-        Client.cpp
-        Client.h
         GraphViewer/connection.cpp
         GraphViewer/connection.h
+        GraphViewer/edgetype.h
+        GraphViewer/graphviewer.cpp
+        GraphViewer/graphviewer.h
+        Client.cpp
+        Client.h
+        Company.cpp
+        Company.h
         Deliverer.cpp
         Deliverer.h
         Delivery.cpp
         Delivery.h
-        GraphViewer/edgetype.h
         Graph.h
-        GraphViewer/graphviewer.cpp
-        GraphViewer/graphviewer.h
         main.cpp
         MutablePriorityQueue.h
         parse.cpp
@@ -30,4 +33,4 @@ add_executable(EATEXPRESS
         Utils.cpp
         Utils.h
         Vehicle.cpp
-        Vehicle.h Parse.h Parse.cpp Company.cpp Company.h)
+        Vehicle.h)
