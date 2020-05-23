@@ -30,4 +30,4 @@ add_executable(EATEXPRESS
         Utils.cpp
         Utils.h
         Vehicle.cpp
-        Vehicle.h Parse.h Parse.cpp)
+        Vehicle.h Parse.h Parse.cpp Company.cpp Company.h)

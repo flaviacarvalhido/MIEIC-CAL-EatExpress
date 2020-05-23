@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/joao/Desktop/CAL2/Client.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/Company.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/joao/Desktop/CAL2/Company.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
 		<Unit filename="C:/Users/joao/Desktop/CAL2/Deliverer.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/EATEXPRESS.dir/Client.cpp.obj"
+  "CMakeFiles/EATEXPRESS.dir/Company.cpp.obj"
   "CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj"
   "CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj"
   "CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj"

@@ -10,6 +10,7 @@
 #include <limits>
 #include <algorithm>
 #include <unordered_set>
+#include <thread>
 #include "MutablePriorityQueue.h"
 
 using namespace std;
@@ -165,6 +166,14 @@ public:
     bool addBidirectionalEdge(const T &sourc, const T &dest, double w);
     vector<Vertex<T>*> calculatePrim();
     vector<Vertex<T>*> calculateKruskal();
+
+
+
+
+    vector<Vertex<T> *> Astar(Graph<T> *graph, const T &origin, const T &dest);
+
+
+    bool aStarRelax(Vertex<T> *v, Vertex<T> *w, Vertex<T> *dest, double weight);
 };
 
 
@@ -465,7 +474,48 @@ void Graph<T>::floydWarshallShortestPath() {
             }
 }
 
+/*
+template<class T>
+template <class T>
+std::vector<Vertex<T> *> bidirectionalDijkstra(Graph<T> * graph, const T &origin, const T &delivery, const T &dest, bool bidirectional)
+{
+    startTime();
 
+    vector<Vertex<T> *> final_path, path;
+
+    thread t1(dijkstraShortestPath<T>, graph, origin, delivery);
+
+    if(bidirectional){
+        //	thread t2(dijkstraShortestPath<T>, graph, delivery, dest);
+        Graph<T> newGraph = graph->duplicate();
+        dijkstraShortestPath<T>(&newGraph, delivery, dest);
+
+        t1.join();
+
+        final_path = graph->getPath(origin, delivery);
+        path = newGraph.getPath(delivery, dest);
+
+        final_path.insert(final_path.end(), path.begin(), path.end());
+    }
+    else{
+        Graph<T> invertedGraph = graph->invert();
+        dijkstraShortestPath<T>(&invertedGraph, dest, delivery);
+
+        t1.join();
+
+        final_path = graph->getPath(origin, delivery);
+        path = invertedGraph.getPath(dest, delivery);
+
+        // TODO: verify
+        final_path.insert(final_path.end(), path.rbegin(), path.rend());
+    }
+//	cout << final_path.size() << " <- final_path\n";
+
+
+    writeTime(BIDIJKSTRA, graph, bidirectional);
+
+    return final_path;
+}*/
 template<class T>
 vector<T> Graph<T>::getfloydWarshallPath(const T &orig, const T &dest) const{
     vector<T> res;
@@ -478,6 +528,47 @@ vector<T> Graph<T>::getfloydWarshallPath(const T &orig, const T &dest) const{
     reverse(res.begin(), res.end());
     return res;
 }
+template <class T>
+vector<Vertex<T> *> Graph<T>::Astar(Graph<T> * graph, const T &origin, const T &dest){
+
+    vector<Vertex<T> *> result;
+    auto org = graph->initSingleSource(origin);
+    auto d = graph->findVertex(dest);
+    MutablePriorityQueue<Vertex<T>> q;
+    q.insert(org);
+
+    while( ! q.empty() ) {
+        auto v = q.extractMin();
+
+        if(v == d)
+            return graph->getPath(origin, dest);
+
+        for(auto e : v->getAdj()) {
+
+            auto oldDist = e.getDest()->getDist();
+            if (aStarEuclidianRelax(v, e.getDest(), d, e.getWeight())) {
+                if (oldDist == INF)
+                    q.insert(e.getDest());
+                else
+                    q.decreaseKey(e.getDest());
+            }
+        }
+    }
+
+    return result;
+}
+template <class T>
+bool Graph<T>::aStarRelax(Vertex<T> *v, Vertex<T> *w, Vertex<T> *dest, double weight) {
+    double heuristic = v->getDist() - v->getEuclideanDist(dest) + weight + w->getEuclideanDist(dest);
+    if (w->getDist() > heuristic) {
+        w->setDist(heuristic);
+        w->setPath(v);
+        return true;
+    }
+    else
+        return false;
+}
+
 
 /**************** Minimum Spanning Tree  ***************/
 template <class T>

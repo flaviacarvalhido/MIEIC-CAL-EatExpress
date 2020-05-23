@@ -4,6 +4,15 @@
 CMakeFiles/EATEXPRESS.dir/Client.cpp.obj: ../Client.cpp
 CMakeFiles/EATEXPRESS.dir/Client.cpp.obj: ../Client.h
 
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Client.h
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Company.cpp
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Company.h
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Deliverer.h
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Delivery.h
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Restaurant.h
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Utils.h
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Vehicle.h
+
 CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj: ../Deliverer.cpp
 CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj: ../Deliverer.h
 CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj: ../Vehicle.h
@@ -39,6 +48,7 @@ CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../GraphViewer/connection.h
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../GraphViewer/edgetype.h
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../GraphViewer/graphviewer.h
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../Client.h
+CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../Company.h
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../Deliverer.h
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../Delivery.h
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../Graph.h

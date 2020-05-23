@@ -54,6 +54,26 @@ string
 fstream
 -
 
+C:/Users/joao/Desktop/CAL2/Company.cpp
+Company.h
+C:/Users/joao/Desktop/CAL2/Company.h
+
+C:/Users/joao/Desktop/CAL2/Company.h
+string
+-
+vector
+-
+Client.h
+C:/Users/joao/Desktop/CAL2/Client.h
+Restaurant.h
+C:/Users/joao/Desktop/CAL2/Restaurant.h
+Deliverer.h
+C:/Users/joao/Desktop/CAL2/Deliverer.h
+Utils.h
+C:/Users/joao/Desktop/CAL2/Utils.h
+Delivery.h
+C:/Users/joao/Desktop/CAL2/Delivery.h
+
 C:/Users/joao/Desktop/CAL2/Deliverer.h
 Vehicle.h
 C:/Users/joao/Desktop/CAL2/Vehicle.h
@@ -131,6 +151,8 @@ Graph.h
 C:/Users/joao/Desktop/CAL2/Graph.h
 parse.h
 C:/Users/joao/Desktop/CAL2/parse.h
+Company.h
+C:/Users/joao/Desktop/CAL2/Company.h
 
 C:/Users/joao/Desktop/CAL2/parse.h
 string

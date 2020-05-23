@@ -149,6 +149,33 @@ Client.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Client.cpp.s
 .PHONY : Client.cpp.s
 
+Company.obj: Company.cpp.obj
+
+.PHONY : Company.obj
+
+# target to build an object file
+Company.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Company.cpp.obj
+.PHONY : Company.cpp.obj
+
+Company.i: Company.cpp.i
+
+.PHONY : Company.i
+
+# target to preprocess a source file
+Company.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Company.cpp.i
+.PHONY : Company.cpp.i
+
+Company.s: Company.cpp.s
+
+.PHONY : Company.s
+
+# target to generate assembly for a file
+Company.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Company.cpp.s
+.PHONY : Company.cpp.s
+
 Deliverer.obj: Deliverer.cpp.obj
 
 .PHONY : Deliverer.obj
@@ -431,6 +458,9 @@ help:
 	@echo ... Client.obj
 	@echo ... Client.i
 	@echo ... Client.s
+	@echo ... Company.obj
+	@echo ... Company.i
+	@echo ... Company.s
 	@echo ... Deliverer.obj
 	@echo ... Deliverer.i
 	@echo ... Deliverer.s

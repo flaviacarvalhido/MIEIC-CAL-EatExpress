@@ -4,6 +4,15 @@
 CMakeFiles/EATEXPRESS.dir/Client.cpp.obj
  C:/Users/joao/Desktop/CAL2/Client.cpp
  C:/Users/joao/Desktop/CAL2/Client.h
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj
+ C:/Users/joao/Desktop/CAL2/Client.h
+ C:/Users/joao/Desktop/CAL2/Company.cpp
+ C:/Users/joao/Desktop/CAL2/Company.h
+ C:/Users/joao/Desktop/CAL2/Deliverer.h
+ C:/Users/joao/Desktop/CAL2/Delivery.h
+ C:/Users/joao/Desktop/CAL2/Restaurant.h
+ C:/Users/joao/Desktop/CAL2/Utils.h
+ C:/Users/joao/Desktop/CAL2/Vehicle.h
 CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj
  C:/Users/joao/Desktop/CAL2/Deliverer.cpp
  C:/Users/joao/Desktop/CAL2/Deliverer.h
@@ -40,6 +49,7 @@ CMakeFiles/EATEXPRESS.dir/main.cpp.obj
  ../GraphViewer/edgetype.h
  ../GraphViewer/graphviewer.h
  C:/Users/joao/Desktop/CAL2/Client.h
+ C:/Users/joao/Desktop/CAL2/Company.h
  C:/Users/joao/Desktop/CAL2/Deliverer.h
  C:/Users/joao/Desktop/CAL2/Delivery.h
  C:/Users/joao/Desktop/CAL2/Graph.h
