@@ -99,7 +99,7 @@ algorithm
 -
 unordered_set
 -
-thread
+math.h
 -
 MutablePriorityQueue.h
 C:/Users/joao/Desktop/CAL2/MutablePriorityQueue.h

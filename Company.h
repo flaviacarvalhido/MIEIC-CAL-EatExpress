@@ -21,6 +21,7 @@ private:
     vector<Restaurant> restaurants;
     vector<Delivery> deliveries;
 
+
 public:
     void readRestaurantFile(string file);
     void readDeliveriesFile(string file);

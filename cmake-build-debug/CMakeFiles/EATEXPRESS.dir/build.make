@@ -56,24 +56,10 @@ include CMakeFiles/EATEXPRESS.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/EATEXPRESS.dir/flags.make
 
-CMakeFiles/EATEXPRESS.dir/Client.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
-CMakeFiles/EATEXPRESS.dir/Client.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
-CMakeFiles/EATEXPRESS.dir/Client.cpp.obj: ../Client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EATEXPRESS.dir/Client.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Client.cpp.obj -c C:\Users\joao\Desktop\CAL2\Client.cpp
-
-CMakeFiles/EATEXPRESS.dir/Client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EATEXPRESS.dir/Client.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joao\Desktop\CAL2\Client.cpp > CMakeFiles\EATEXPRESS.dir\Client.cpp.i
-
-CMakeFiles/EATEXPRESS.dir/Client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/Client.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\Client.cpp -o CMakeFiles\EATEXPRESS.dir\Client.cpp.s
-
 CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj: ../GraphViewer/connection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\GraphViewer\connection.cpp.obj -c C:\Users\joao\Desktop\CAL2\GraphViewer\connection.cpp
 
 CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.i: cmake_force
@@ -84,10 +70,52 @@ CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\GraphViewer\connection.cpp -o CMakeFiles\EATEXPRESS.dir\GraphViewer\connection.cpp.s
 
+CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
+CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
+CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj: ../GraphViewer/graphviewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\GraphViewer\graphviewer.cpp.obj -c C:\Users\joao\Desktop\CAL2\GraphViewer\graphviewer.cpp
+
+CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joao\Desktop\CAL2\GraphViewer\graphviewer.cpp > CMakeFiles\EATEXPRESS.dir\GraphViewer\graphviewer.cpp.i
+
+CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\GraphViewer\graphviewer.cpp -o CMakeFiles\EATEXPRESS.dir\GraphViewer\graphviewer.cpp.s
+
+CMakeFiles/EATEXPRESS.dir/Client.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
+CMakeFiles/EATEXPRESS.dir/Client.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
+CMakeFiles/EATEXPRESS.dir/Client.cpp.obj: ../Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EATEXPRESS.dir/Client.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Client.cpp.obj -c C:\Users\joao\Desktop\CAL2\Client.cpp
+
+CMakeFiles/EATEXPRESS.dir/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EATEXPRESS.dir/Client.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joao\Desktop\CAL2\Client.cpp > CMakeFiles\EATEXPRESS.dir\Client.cpp.i
+
+CMakeFiles/EATEXPRESS.dir/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/Client.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\Client.cpp -o CMakeFiles\EATEXPRESS.dir\Client.cpp.s
+
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Company.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EATEXPRESS.dir/Company.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Company.cpp.obj -c C:\Users\joao\Desktop\CAL2\Company.cpp
+
+CMakeFiles/EATEXPRESS.dir/Company.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EATEXPRESS.dir/Company.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joao\Desktop\CAL2\Company.cpp > CMakeFiles\EATEXPRESS.dir\Company.cpp.i
+
+CMakeFiles/EATEXPRESS.dir/Company.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/Company.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\Company.cpp -o CMakeFiles\EATEXPRESS.dir\Company.cpp.s
+
 CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj: ../Deliverer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Deliverer.cpp.obj -c C:\Users\joao\Desktop\CAL2\Deliverer.cpp
 
 CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.i: cmake_force
@@ -101,7 +129,7 @@ CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.s: cmake_force
 CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj: ../Delivery.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Delivery.cpp.obj -c C:\Users\joao\Desktop\CAL2\Delivery.cpp
 
 CMakeFiles/EATEXPRESS.dir/Delivery.cpp.i: cmake_force
@@ -112,24 +140,10 @@ CMakeFiles/EATEXPRESS.dir/Delivery.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/Delivery.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\Delivery.cpp -o CMakeFiles\EATEXPRESS.dir\Delivery.cpp.s
 
-CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
-CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
-CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj: ../GraphViewer/graphviewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\GraphViewer\graphviewer.cpp.obj -c C:\Users\joao\Desktop\CAL2\GraphViewer\graphviewer.cpp
-
-CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joao\Desktop\CAL2\GraphViewer\graphviewer.cpp > CMakeFiles\EATEXPRESS.dir\GraphViewer\graphviewer.cpp.i
-
-CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\GraphViewer\graphviewer.cpp -o CMakeFiles\EATEXPRESS.dir\GraphViewer\graphviewer.cpp.s
-
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EATEXPRESS.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EATEXPRESS.dir/main.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\main.cpp.obj -c C:\Users\joao\Desktop\CAL2\main.cpp
 
 CMakeFiles/EATEXPRESS.dir/main.cpp.i: cmake_force
@@ -143,7 +157,7 @@ CMakeFiles/EATEXPRESS.dir/main.cpp.s: cmake_force
 CMakeFiles/EATEXPRESS.dir/parse.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/parse.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/parse.cpp.obj: ../parse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EATEXPRESS.dir/parse.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EATEXPRESS.dir/parse.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\parse.cpp.obj -c C:\Users\joao\Desktop\CAL2\parse.cpp
 
 CMakeFiles/EATEXPRESS.dir/parse.cpp.i: cmake_force
@@ -157,7 +171,7 @@ CMakeFiles/EATEXPRESS.dir/parse.cpp.s: cmake_force
 CMakeFiles/EATEXPRESS.dir/Point.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/Point.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/Point.cpp.obj: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EATEXPRESS.dir/Point.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EATEXPRESS.dir/Point.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Point.cpp.obj -c C:\Users\joao\Desktop\CAL2\Point.cpp
 
 CMakeFiles/EATEXPRESS.dir/Point.cpp.i: cmake_force
@@ -171,7 +185,7 @@ CMakeFiles/EATEXPRESS.dir/Point.cpp.s: cmake_force
 CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj: ../Restaurant.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Restaurant.cpp.obj -c C:\Users\joao\Desktop\CAL2\Restaurant.cpp
 
 CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.i: cmake_force
@@ -185,7 +199,7 @@ CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.s: cmake_force
 CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj: ../Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Utils.cpp.obj -c C:\Users\joao\Desktop\CAL2\Utils.cpp
 
 CMakeFiles/EATEXPRESS.dir/Utils.cpp.i: cmake_force
@@ -199,7 +213,7 @@ CMakeFiles/EATEXPRESS.dir/Utils.cpp.s: cmake_force
 CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
 CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj: ../Vehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Vehicle.cpp.obj -c C:\Users\joao\Desktop\CAL2\Vehicle.cpp
 
 CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.i: cmake_force
@@ -210,50 +224,36 @@ CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\Vehicle.cpp -o CMakeFiles\EATEXPRESS.dir\Vehicle.cpp.s
 
-CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
-CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
-CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Company.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/EATEXPRESS.dir/Company.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Company.cpp.obj -c C:\Users\joao\Desktop\CAL2\Company.cpp
-
-CMakeFiles/EATEXPRESS.dir/Company.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EATEXPRESS.dir/Company.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joao\Desktop\CAL2\Company.cpp > CMakeFiles\EATEXPRESS.dir\Company.cpp.i
-
-CMakeFiles/EATEXPRESS.dir/Company.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/Company.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\Company.cpp -o CMakeFiles\EATEXPRESS.dir\Company.cpp.s
-
 # Object files for target EATEXPRESS
 EATEXPRESS_OBJECTS = \
-"CMakeFiles/EATEXPRESS.dir/Client.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj" \
+"CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj" \
+"CMakeFiles/EATEXPRESS.dir/Client.cpp.obj" \
+"CMakeFiles/EATEXPRESS.dir/Company.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj" \
-"CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/main.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/parse.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Point.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj" \
-"CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj" \
-"CMakeFiles/EATEXPRESS.dir/Company.cpp.obj"
+"CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj"
 
 # External object files for target EATEXPRESS
 EATEXPRESS_EXTERNAL_OBJECTS =
 
-EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Client.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/GraphViewer/connection.cpp.obj
+EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj
+EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Client.cpp.obj
+EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Company.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj
-EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/main.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/parse.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Point.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj
-EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Company.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/build.make
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/linklibs.rsp
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/objects1.rsp

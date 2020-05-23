@@ -63,13 +63,9 @@ Delivery::~Delivery() {
 
 }
 
-void Delivery::removeRestaurant(Restaurant restaurant) {
-    for(int i=0;i<restaurants.size();i++){
-        if(restaurants[i].getId()==restaurant.getId()){
-            restaurants.erase(restaurants.begin()+i);
-        }
-        break;
-    }
+void Delivery::removeRestaurant(int i) {
+    restaurants.erase(restaurants.begin()+i);
+
 }
 
 

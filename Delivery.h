@@ -24,7 +24,7 @@ public:
     ~Delivery();
     void setClient(Client client);
     void addRestaurant(Restaurant restaurant);
-    void removeRestaurant(Restaurant restaurant);
+    void removeRestaurant(int i);
     void setOrderedItems(vector<int> p);
     Client getClient();
     vector<Restaurant> getRestaurant();
