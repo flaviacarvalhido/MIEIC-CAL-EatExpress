@@ -24,8 +24,8 @@ add_executable(EATEXPRESS
         Graph.h
         main.cpp
         MutablePriorityQueue.h
-        parse.cpp
-        parse.h
+        Parse.cpp
+        Parse.h
         Point.cpp
         Point.h
         Restaurant.cpp

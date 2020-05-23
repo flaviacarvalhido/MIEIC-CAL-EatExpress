@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\joao\Desktop\CAL2
+CMAKE_SOURCE_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\joao\Desktop\CAL2\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\joao\Desktop\CAL2\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles" "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -284,6 +284,33 @@ GraphViewer/graphviewer.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.s
 .PHONY : GraphViewer/graphviewer.cpp.s
 
+Parse.obj: Parse.cpp.obj
+
+.PHONY : Parse.obj
+
+# target to build an object file
+Parse.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj
+.PHONY : Parse.cpp.obj
+
+Parse.i: Parse.cpp.i
+
+.PHONY : Parse.i
+
+# target to preprocess a source file
+Parse.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.i
+.PHONY : Parse.cpp.i
+
+Parse.s: Parse.cpp.s
+
+.PHONY : Parse.s
+
+# target to generate assembly for a file
+Parse.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.s
+.PHONY : Parse.cpp.s
+
 Point.obj: Point.cpp.obj
 
 .PHONY : Point.obj
@@ -419,33 +446,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-parse.obj: parse.cpp.obj
-
-.PHONY : parse.obj
-
-# target to build an object file
-parse.cpp.obj:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.obj
-.PHONY : parse.cpp.obj
-
-parse.i: parse.cpp.i
-
-.PHONY : parse.i
-
-# target to preprocess a source file
-parse.cpp.i:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.i
-.PHONY : parse.cpp.i
-
-parse.s: parse.cpp.s
-
-.PHONY : parse.s
-
-# target to generate assembly for a file
-parse.cpp.s:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.s
-.PHONY : parse.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -473,6 +473,9 @@ help:
 	@echo ... GraphViewer/graphviewer.obj
 	@echo ... GraphViewer/graphviewer.i
 	@echo ... GraphViewer/graphviewer.s
+	@echo ... Parse.obj
+	@echo ... Parse.i
+	@echo ... Parse.s
 	@echo ... Point.obj
 	@echo ... Point.i
 	@echo ... Point.s
@@ -488,9 +491,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... parse.obj
-	@echo ... parse.i
-	@echo ... parse.s
 .PHONY : help
 
 

@@ -191,7 +191,7 @@ public:
 
 
 
-    vector<T> Astar(const T &origin, const T &dest);
+    void Astar(const T &origin, const T &dest);
 
     bool aStarRelax(Vertex<T> *v, Vertex<T> *w, Vertex<T> *dest, double weight);
 };
@@ -550,9 +550,8 @@ vector<T> Graph<T>::getfloydWarshallPath(const T &orig, const T &dest) const{
     return res;
 }
 template <class T>
-vector<T> Graph<T>::Astar( const T &origin, const T &dest){
+void Graph<T>::Astar( const T &origin, const T &dest){
 
-    vector<T> result;
     auto org = initSingleSource(origin);
     auto d = findVertex(dest);
     MutablePriorityQueue<Vertex<T>> q;
@@ -562,7 +561,7 @@ vector<T> Graph<T>::Astar( const T &origin, const T &dest){
         auto v = q.extractMin();
 
         if(v == d)
-            return getPath(origin, dest);
+            break;
 
         for(auto e : v->getAdj()) {
 
@@ -576,19 +575,19 @@ vector<T> Graph<T>::Astar( const T &origin, const T &dest){
         }
     }
 
-    return result;
 }
 template <class T>
 bool Graph<T>::aStarRelax(Vertex<T> *v, Vertex<T> *w, Vertex<T> *dest, double weight) {
-    double heuristic = v->getDist() - sqrt(pow(dest->getInfo().getX() - v->getInfo().getY(), 2) + pow(dest->getInfo().getX() - v->getInfo().getY(), 2)) + weight + sqrt(pow(dest->getInfo().getX() - w->getInfo().getY(), 2) + pow(dest->getInfo().getX() - w->getInfo().getY(), 2));
 
-    if (w->getDist() > heuristic) {
-        w->setDist(heuristic);
-        w->setPath(v);
+    if (v->dist + weight < w->dist){
+        w->dist = v->dist + weight;
+        //w->comparing_var = v->dist + weight + abs(w->x - dest->x) + abs(w->y - dest->y);
+        w->path = v;
         return true;
     }
-    else
+    else{
         return false;
+    }
 }
 
 

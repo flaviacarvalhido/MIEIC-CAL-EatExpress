@@ -65,7 +65,6 @@ Delivery::~Delivery() {
 
 void Delivery::removeRestaurant(int i) {
     restaurants.erase(restaurants.begin()+i);
-
 }
 
 

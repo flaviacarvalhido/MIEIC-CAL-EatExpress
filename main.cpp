@@ -125,9 +125,10 @@ int main()
             for (int i = 0; i < c.getDeliveries()[0].getRestaurant().size(); i++) {
                 graph.Astar(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());           //segmentation fault when running second time, check if we can run algorithm more than once and if not whats the origin and the destination to calculate every closest path
 
-                if ((Vertex<Point>(c.getDeliveries()[0].getRestaurant()[i].getId())).getDist() < min_distance) {
+                if (graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist() < min_distance) {
                     temp_result = graph.getPath(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
                     smallest_distance_index = i;
+                    min_distance = graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist();
                 }
             }
 
@@ -148,9 +149,10 @@ int main()
 
                     graph.Astar(c.getDeliveries()[0].getRestaurant()[smallest_distance_index].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
 
-                    if ((Vertex<Point>(c.getDeliveries()[0].getRestaurant()[i].getId())).getDist() < min_distance) {
+                    if (graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist() < min_distance) {
                         temp_result = graph.getPath(c.getDeliveries()[0].getRestaurant()[smallest_distance_index].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
                         smallest_restaurant_distance = i;
+                        min_distance = graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist();
                     }
                 }
 
