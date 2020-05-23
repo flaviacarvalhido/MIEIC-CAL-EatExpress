@@ -6,12 +6,12 @@
 
 Delivery::Delivery() {
     this->client = Client();
-    this->restaurant = Restaurant();
+    this->restaurants = vector<Restaurant>();
 }
 
-Delivery::Delivery(Client c, Restaurant r, vector<int> i) {
+Delivery::Delivery(Client c, vector<Restaurant> r, vector<int> i) {
     this->client = c;
-    this->restaurant = r;
+    this->restaurants = r;
     this->orderedItems = i;
 }
 
@@ -19,8 +19,8 @@ void Delivery::setClient(Client client) {
     this->client = client;
 }
 
-void Delivery::setRestaurant(Restaurant restaurant) {
-    this->restaurant = restaurant;
+void Delivery::addRestaurant(Restaurant restaurant) {
+    this->restaurants.push_back(restaurant);
 }
 
 void Delivery::setOrderedItems(vector<int> p) {
@@ -31,8 +31,8 @@ Client Delivery::getClient() {
     return client;
 }
 
-Restaurant Delivery::getRestaurant() {
-    return restaurant;
+vector<Restaurant> Delivery::getRestaurant() {
+    return restaurants;
 }
 
 vector<int> Delivery::getOrderedItems() {
@@ -61,6 +61,15 @@ int Delivery::calculateOccupiedSpace() {
 
 Delivery::~Delivery() {
 
+}
+
+void Delivery::removeRestaurant(Restaurant restaurant) {
+    for(int i=0;i<restaurants.size();i++){
+        if(restaurants[i].getId()==restaurant.getId()){
+            restaurants.erase(restaurants.begin()+i);
+        }
+        break;
+    }
 }
 
 

@@ -36,7 +36,12 @@ void Company::readDeliveriesFile(string file) {
             clients.push_back(Client(mstoi(temp)));
         }
         getline(delivery_file, temp);
-        d.setRestaurant(Restaurant(mstoi(temp)));
+        while(temp!="..........") {
+
+            d.addRestaurant(Restaurant(mstoi(temp)));
+            getline(delivery_file, temp);
+        }
+
         getline(delivery_file, temp);
         temp_temp_vec = decompose(temp, ',');
 
@@ -95,5 +100,12 @@ vector<Restaurant> Company::getRestaurants() {
 vector<Delivery> Company::getDeliveries() {
     return deliveries;
 }
+/*
+void Company::decideDeliverer(Point p) {
+    for(int i =0 ;i<deliverers.size(); i++){
+        if(deli)
+    }
 
+}
+*/
 

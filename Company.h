@@ -12,6 +12,7 @@
 #include "Deliverer.h"
 #include "Utils.h"
 #include "Delivery.h"
+#include "Point.h"
 using namespace std;
 class Company {
 private:
@@ -28,5 +29,6 @@ public:
     vector<Deliverer> getDeliverers();
     vector<Restaurant> getRestaurants();
     vector<Delivery> getDeliveries();
+    void decideDeliverer(Point p);
 };
 #endif //EATEXPRESS_COMPANY_H

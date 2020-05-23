@@ -13,20 +13,21 @@ class Delivery {
 private:
     int id;
     Client client;
-    Restaurant restaurant;
+    vector<Restaurant> restaurants;
     vector <int> orderedItems;
 
 
 public:
 
     Delivery();
-    Delivery(Client c, Restaurant r, vector <int> i);
+    Delivery(Client c, vector<Restaurant> r, vector <int> i);
     ~Delivery();
     void setClient(Client client);
-    void setRestaurant(Restaurant restaurant);
+    void addRestaurant(Restaurant restaurant);
+    void removeRestaurant(Restaurant restaurant);
     void setOrderedItems(vector<int> p);
     Client getClient();
-    Restaurant getRestaurant();
+    vector<Restaurant> getRestaurant();
     vector <int> getOrderedItems();
     void addItem(int space);
     void setID(int id);

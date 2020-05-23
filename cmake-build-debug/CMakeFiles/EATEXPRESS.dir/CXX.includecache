@@ -54,10 +54,6 @@ string
 fstream
 -
 
-C:/Users/joao/Desktop/CAL2/Company.cpp
-Company.h
-C:/Users/joao/Desktop/CAL2/Company.h
-
 C:/Users/joao/Desktop/CAL2/Company.h
 string
 -
@@ -73,6 +69,8 @@ Utils.h
 C:/Users/joao/Desktop/CAL2/Utils.h
 Delivery.h
 C:/Users/joao/Desktop/CAL2/Delivery.h
+Point.h
+C:/Users/joao/Desktop/CAL2/Point.h
 
 C:/Users/joao/Desktop/CAL2/Deliverer.h
 Vehicle.h
@@ -100,6 +98,8 @@ limits
 algorithm
 -
 unordered_set
+-
+thread
 -
 MutablePriorityQueue.h
 C:/Users/joao/Desktop/CAL2/MutablePriorityQueue.h
@@ -133,16 +133,6 @@ vector
 -
 GraphViewer/graphviewer.h
 -
-Client.h
-C:/Users/joao/Desktop/CAL2/Client.h
-Restaurant.h
-C:/Users/joao/Desktop/CAL2/Restaurant.h
-Deliverer.h
-C:/Users/joao/Desktop/CAL2/Deliverer.h
-Vehicle.h
-C:/Users/joao/Desktop/CAL2/Vehicle.h
-Delivery.h
-C:/Users/joao/Desktop/CAL2/Delivery.h
 Utils.h
 C:/Users/joao/Desktop/CAL2/Utils.h
 Point.h

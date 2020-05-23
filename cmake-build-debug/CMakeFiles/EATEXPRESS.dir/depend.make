@@ -9,6 +9,7 @@ CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Company.cpp
 CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Company.h
 CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Deliverer.h
 CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Delivery.h
+CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Point.h
 CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Restaurant.h
 CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Utils.h
 CMakeFiles/EATEXPRESS.dir/Company.cpp.obj: ../Vehicle.h

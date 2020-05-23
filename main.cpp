@@ -20,6 +20,7 @@ Graph<Point> graph;
 
 int main()
 {
+
     cout << "Welcome to EatExpress!" << endl;
     cout << endl;
     Company c;
@@ -49,13 +50,17 @@ int main()
     c.readRestaurantFile("../Restaurants.txt");
 
 
+
     //VER SE ID DOS RESTAURANTES DAS DELIVERIES É UM RESTAURANTE NO RESTAURANTES TXT, se não erro
+
     bool found=false;
     for(unsigned int i =0; i<c.getDeliveries().size();i++){
         for(unsigned int j=0; j<c.getRestaurants().size();j++){
-            if(c.getDeliveries()[i].getRestaurant().getId() == c.getRestaurants()[j].getId()){
-                found =true;
-                break;
+            for(unsigned int k=0; j<c.getDeliveries()[i].getRestaurant().size();k++){
+                if(c.getDeliveries()[i].getRestaurant()[k].getId() == c.getRestaurants()[j].getId()){
+                    found =true;
+                    break;
+                }
             }
         }
         if(!found){
@@ -82,7 +87,7 @@ int main()
         vector<Point> res;
         bool found=false;
 
-        res=graph.bfs(c.getDeliveries()[0].getRestaurant().getId());
+        res=graph.bfs(c.getDeliveries()[0].getRestaurant()[0].getId());
 
         for(unsigned int i=0;i<res.size();i++){
             if(res[i].getID() == c.getDeliveries()[0].getClient().getId()){
@@ -100,13 +105,15 @@ int main()
         //TODO:bidirectional dijkstra
         vector<Point> perfectPath;
 
-        graph.dijkstraShortestPath(c.getDeliveries()[0].getRestaurant().getId()); //for now its just unidirectional dijkstra
-        perfectPath = graph.getPath(c.getDeliveries()[0].getRestaurant().getId(),c.getDeliveries()[0].getClient().getId());
+
+        graph.dijkstraShortestPath(c.getDeliveries()[0].getRestaurant()[0].getId()); //for now its just unidirectional dijkstra
+        perfectPath = graph.getPath(c.getDeliveries()[0].getRestaurant()[0].getId(),c.getDeliveries()[0].getClient().getId());
         for(int i=0;i<perfectPath.size();i++){
             gv.setVertexColor(perfectPath[i].getID(), "green");
         }
         gv.setVertexColor(perfectPath[0].getID(), "red");
         gv.setVertexColor(perfectPath[perfectPath.size()-1].getID(), "red");
+
     }
 
     else{
@@ -125,5 +132,6 @@ int main()
 
 
     system("pause");
+
     return 0;
 }
