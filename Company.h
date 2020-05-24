@@ -30,6 +30,7 @@ public:
     vector<Deliverer> getDeliverers();
     vector<Restaurant> getRestaurants();
     vector<Delivery> getDeliveries();
+    void setDeliveries(vector<Delivery> d);
     void decideDeliverer(Point p);
 };
 #endif //EATEXPRESS_COMPANY_H

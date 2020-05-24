@@ -32,6 +32,7 @@ public:
     void addItem(int space);
     void setID(int id);
     int getID();
+    void setRestaurant(vector <Restaurant> r);
 
 
     int calculateOccupiedSpace();

@@ -67,4 +67,8 @@ void Delivery::removeRestaurant(int i) {
     restaurants.erase(restaurants.begin()+i);
 }
 
+void Delivery::setRestaurant(vector<Restaurant> r) {
+    this->restaurants = r;
+}
+
 

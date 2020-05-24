@@ -104,6 +104,10 @@ vector<Delivery> Company::getDeliveries() {
     return deliveries;
 }
 
+void Company::setDeliveries(vector<Delivery> d) {
+    this->deliveries=d;
+}
+
 
 /*
 void Company::decideDeliverer(Point p) {

@@ -119,6 +119,9 @@ int main()
         if(c.getClients().size()==1) {
 
             vector<Point> temp_result, result;
+
+            vector<Restaurant> deliveryRestaurants = c.getDeliveries()[0].getRestaurant();
+
             int min_distance = 999999999;
             int smallest_distance_index = 0;
 
@@ -132,7 +135,7 @@ int main()
                 }
             }
 
-            result = temp_result;       //caminho mais rápido da casa do cliente ao primeiro restaurante
+            result.insert(result.end(),temp_result.begin(),temp_result.end());     //caminho mais rápido da casa do cliente ao primeiro restaurante
 
 
 
@@ -140,9 +143,10 @@ int main()
 
             int smallest_restaurant_distance = 0;
             //percorrer restantes restaurantes e ver caminho mais rápido entre cada um deles; adicionar ao resultado final até terem sido visitados todos os restaurantes
-            while (!c.getDeliveries()[0].getRestaurant().empty()){
+            while (c.getDeliveries()[0].getRestaurant().size() != 1){
 
                 min_distance = 999999999;
+
 
                 for (int i = 0; i < c.getDeliveries()[0].getRestaurant().size(); i++) {
                     if(i==smallest_distance_index) continue;
@@ -157,7 +161,11 @@ int main()
                 }
 
                 result.insert(result.end(),temp_result.begin(),temp_result.end());
-                c.getDeliveries()[0].removeRestaurant(smallest_distance_index);
+                vector <Restaurant> r = c.getDeliveries()[0].getRestaurant();
+                r.erase(r.begin()+smallest_distance_index);
+                vector<Delivery> d = c.getDeliveries();
+                d[0].setRestaurant(r);
+                c.setDeliveries(d);
                 smallest_distance_index = smallest_restaurant_distance;
 
             }
@@ -166,7 +174,10 @@ int main()
                 gv.setVertexColor(result[i].getID(), "green");
             }
             gv.setVertexColor(result[0].getID(), "red");
-            gv.setVertexColor(result[result.size()-1].getID(), "red");
+
+            for(unsigned int i = 0;i<deliveryRestaurants.size();i++){
+                gv.setVertexColor(deliveryRestaurants[i].getId(), "red");
+            }
         }
     }
 
