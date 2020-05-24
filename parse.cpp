@@ -131,7 +131,7 @@ GraphViewer buildGraphViewer(Graph<Point> & temp_graph) {
             yPercent = 1.0 - ((p->getInfo().getY() - minY) / graphHeight);
 
             gv.addNode(p->getInfo().getID(), (int) (xPercent * 4000), (int) (yPercent * 2000));
-
+            gv.setVertexLabel(p->getInfo().getID(),to_string(p->getInfo().getID()));
             gv.setVertexColor(p->getInfo().getID(), "orange");
         }
     }

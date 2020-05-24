@@ -34,11 +34,11 @@ int main()
 
 
     c.readDelivererFile("../Deliverers.txt");
-    c.readRestaurantFile("../Restaurants.txt");
+
 
 
     //VER SE ID DOS RESTAURANTES DAS DELIVERIES É UM RESTAURANTE NO RESTAURANTES TXT, se não erro
-
+    /*
     bool found=false;
     for(unsigned int i =0; i<c.getDeliveries().size();i++){
         for(unsigned int j=0; j<c.getRestaurants().size();j++){
@@ -54,14 +54,14 @@ int main()
             return -1;
         }
     }
-
+    */
 
     //LER GRAFOS
     //iniciar GRAPHVIEWER
     //vector<Point> res;
 
 
-    int city=opcaoCidade();
+    int city=opcaoCidade(c);
     int caso=opcaoCaso(c,city);
 
     graph.bfs(c.getDeliveries()[0].getClient().getId());
@@ -79,7 +79,7 @@ int main()
     //CASO BASE: UMA ENTREGA, UM RESTAURANTE, UM ESTAFETA, UM CLIENTE
     if(caso==1) {
 
-        c.readDeliveriesFile("../Deliveries.txt");
+
         if(!graph.findVertex(c.getDeliveries()[0].getClient().getId())->getVisited()){
             cout << "Client address is not reacheable from restaurant. Delivery cannot be made" << endl;
             return -2;
@@ -88,6 +88,7 @@ int main()
         cout << "Calculating route, please wait..." << endl;
 
         //TODO:bidirectional dijkstra
+
         vector<Point> perfectPath;
 
 

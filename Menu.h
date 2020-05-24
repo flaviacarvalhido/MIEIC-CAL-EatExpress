@@ -17,6 +17,6 @@
 
 void selecaoCaso();
 void selecaoCidade();
-int opcaoCidade();
+int opcaoCidade(Company &c);
 int opcaoCaso(Company &c,int city);
 #endif //EATEXPRESS_MENU_H
