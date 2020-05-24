@@ -126,13 +126,13 @@
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/GraphViewer/graphviewer.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Menu.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Menu.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/MutablePriorityQueue.h">
-			<Option target="EATEXPRESS"/>
-		</Unit>
-		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.cpp">
-			<Option target="EATEXPRESS"/>
-		</Unit>
-		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.cpp">
@@ -153,13 +153,13 @@
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
-		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Vehicle.cpp">
-			<Option target="EATEXPRESS"/>
-		</Unit>
-		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Vehicle.h">
-			<Option target="EATEXPRESS"/>
-		</Unit>
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/main.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/parse.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/parse.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/CMakeLists.txt">

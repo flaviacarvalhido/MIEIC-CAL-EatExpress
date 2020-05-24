@@ -366,6 +366,20 @@ Vertex<T> * Graph<T>::initSingleSource(const T &origin) {
     return s;
 }
 
+
+template<class T>
+vector<T> Graph<T>::getPath(const T &origin, const T &dest) const{
+    vector<T> res;
+    auto v = findVertex(dest);
+    if (v == nullptr || v->dist == INF) // missing or disconnected
+        return res;
+    for ( ; v != nullptr; v = v->path)
+        res.push_back(v->info);
+    reverse(res.begin(), res.end());
+    return res;
+}
+
+
 /**
  * Analyzes an edge in single source shortest path algorithm.
  * Returns true if the target vertex was relaxed (dist, path).
@@ -401,47 +415,9 @@ void Graph<T>::dijkstraShortestPath(const T &origin) {
     }
 }
 
-template<class T>
-vector<T> Graph<T>::getPath(const T &origin, const T &dest) const{
-    vector<T> res;
-    auto v = findVertex(dest);
-    if (v == nullptr || v->dist == INF) // missing or disconnected
-        return res;
-    for ( ; v != nullptr; v = v->path)
-        res.push_back(v->info);
-    reverse(res.begin(), res.end());
-    return res;
-}
-
-template<class T>
-void Graph<T>::unweightedShortestPath(const T &orig) {
-    auto s = initSingleSource(orig);
-    queue< Vertex<T>* > q;
-    q.push(s);
-    while( ! q.empty() ) {
-        auto v = q.front();
-        q.pop();
-        for(auto e: v->adj)
-            if (relax(v, e.dest, 1))
-                q.push(e.dest);
-    }
-}
-
-template<class T>
-void Graph<T>::bellmanFordShortestPath(const T &orig) {
-    initSingleSource(orig);
-    for (unsigned i = 1; i < vertexSet.size(); i++)
-        for (auto v: vertexSet)
-            for (auto e: v->adj)
-                relax(v, e.dest, e.weight);
-    for (auto v: vertexSet)
-        for (auto e: v->adj)
-            if (relax(v, e.dest, e.weight))
-                cout << "Negative cycle!" << endl;
-}
 
 
-/**************** All Pairs Shortest Path  ***************/
+
 
 template <class T>
 void deleteMatrix(T **m, int n) {
@@ -460,6 +436,7 @@ Graph<T>::~Graph() {
     deleteMatrix(W, vertexSet.size());
     deleteMatrix(P, vertexSet.size());
 }
+
 
 template<class T>
 void Graph<T>::floydWarshallShortestPath() {
@@ -495,48 +472,7 @@ void Graph<T>::floydWarshallShortestPath() {
             }
 }
 
-/*
-template<class T>
-template <class T>
-std::vector<Vertex<T> *> bidirectionalDijkstra(Graph<T> * graph, const T &origin, const T &delivery, const T &dest, bool bidirectional)
-{
-    startTime();
 
-    vector<Vertex<T> *> final_path, path;
-
-    thread t1(dijkstraShortestPath<T>, graph, origin, delivery);
-
-    if(bidirectional){
-        //	thread t2(dijkstraShortestPath<T>, graph, delivery, dest);
-        Graph<T> newGraph = graph->duplicate();
-        dijkstraShortestPath<T>(&newGraph, delivery, dest);
-
-        t1.join();
-
-        final_path = graph->getPath(origin, delivery);
-        path = newGraph.getPath(delivery, dest);
-
-        final_path.insert(final_path.end(), path.begin(), path.end());
-    }
-    else{
-        Graph<T> invertedGraph = graph->invert();
-        dijkstraShortestPath<T>(&invertedGraph, dest, delivery);
-
-        t1.join();
-
-        final_path = graph->getPath(origin, delivery);
-        path = invertedGraph.getPath(dest, delivery);
-
-        // TODO: verify
-        final_path.insert(final_path.end(), path.rbegin(), path.rend());
-    }
-//	cout << final_path.size() << " <- final_path\n";
-
-
-    writeTime(BIDIJKSTRA, graph, bidirectional);
-
-    return final_path;
-}*/
 template<class T>
 vector<T> Graph<T>::getfloydWarshallPath(const T &orig, const T &dest) const{
     vector<T> res;
@@ -549,6 +485,7 @@ vector<T> Graph<T>::getfloydWarshallPath(const T &orig, const T &dest) const{
     reverse(res.begin(), res.end());
     return res;
 }
+
 template <class T>
 void Graph<T>::Astar( const T &origin, const T &dest){
 
@@ -589,29 +526,6 @@ bool Graph<T>::aStarRelax(Vertex<T> *v, Vertex<T> *w, Vertex<T> *dest, double we
     }
 }
 
-
-/**************** Minimum Spanning Tree  ***************/
-template <class T>
-bool Graph<T>::addBidirectionalEdge(const T &sourc, const T &dest, double w) {
-    // TODO
-    return false;
-}
-
-
-
-template <class T>
-vector<Vertex<T>* > Graph<T>::calculatePrim() {
-    // TODO
-    return vertexSet;
-}
-
-
-
-template <class T>
-vector<Vertex<T>*> Graph<T>::calculateKruskal() {
-    // TODO
-    return vertexSet;
-}
 
 
 

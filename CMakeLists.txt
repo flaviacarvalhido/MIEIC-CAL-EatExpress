@@ -32,5 +32,4 @@ add_executable(EATEXPRESS
         Restaurant.h
         Utils.cpp
         Utils.h
-        Vehicle.cpp
-        Vehicle.h)
+        Menu.cpp Menu.h)

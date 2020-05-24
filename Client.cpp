@@ -21,3 +21,19 @@ void Client::setId(int id) {
 Client::~Client() {
 
 }
+
+bool Client::operator<(const Client &rhs) const {
+    return id < rhs.id;
+}
+
+bool Client::operator>(const Client &rhs) const {
+    return rhs < *this;
+}
+
+bool Client::operator<=(const Client &rhs) const {
+    return !(rhs < *this);
+}
+
+bool Client::operator>=(const Client &rhs) const {
+    return !(*this < rhs);
+}

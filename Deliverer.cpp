@@ -7,12 +7,13 @@
 Deliverer::Deliverer() {
     this->id=0;
     this->isFree=true;
-    this->vehicle= Vehicle();
+    this->vMed=0;
+    this->espaco=0;
 }
 
-Deliverer::Deliverer(int id, Vehicle v) {
+Deliverer::Deliverer(int id) {
     this->id = id;
-    this->vehicle=v;
+
 }
 
 void Deliverer::setID(int id) {
@@ -23,13 +24,6 @@ int Deliverer::getID() {
     return id;
 }
 
-void Deliverer::setVehicle(Vehicle v) {
-    this->vehicle=v;
-}
-
-Vehicle Deliverer::getVehicle() {
-    return vehicle;
-}
 
 void Deliverer::setIsFree(bool free) {
     this->isFree = free;
@@ -37,6 +31,18 @@ void Deliverer::setIsFree(bool free) {
 
 bool Deliverer::getIsFree() {
     return isFree;
+}
+int Deliverer::getEspaco(){
+    return espaco;
+}
+void Deliverer::setEspaco(int espaco){
+    this->espaco=espaco;
+}
+float Deliverer::getvMed(){
+    return vMed;
+}
+void Deliverer::setvMed(float vMed){
+    this->vMed=vMed;
 }
 
 Deliverer::~Deliverer() {

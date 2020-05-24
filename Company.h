@@ -21,6 +21,7 @@ private:
     vector<Restaurant> restaurants;
     vector<Delivery> deliveries;
 
+    vector<Restaurant> totalDeliveryRestaurants;
 
 public:
     void readRestaurantFile(string file);
@@ -30,8 +31,11 @@ public:
     vector<Deliverer> getDeliverers();
     vector<Restaurant> getRestaurants();
     vector<Delivery> getDeliveries();
+    vector<Restaurant> getTotalDeliveryRestaurants();
+    void setTotalDeliveryRestaurants(vector<Restaurant> r);
     void setDeliveries(vector<Delivery> d);
     void setClients(vector <Client> c);
-    void decideDeliverer(Point p);
+    Deliverer decideDeliverer(double distancia,int espaco);
+
 };
 #endif //EATEXPRESS_COMPANY_H

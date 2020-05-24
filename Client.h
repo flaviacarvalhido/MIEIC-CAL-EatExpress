@@ -23,6 +23,14 @@ public:
     Client(int id);
     int getId();
     void setId(int id);
+
+    bool operator<(const Client &rhs) const;
+
+    bool operator>(const Client &rhs) const;
+
+    bool operator<=(const Client &rhs) const;
+
+    bool operator>=(const Client &rhs) const;
 };
 
 

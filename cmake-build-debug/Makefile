@@ -284,32 +284,32 @@ GraphViewer/graphviewer.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.s
 .PHONY : GraphViewer/graphviewer.cpp.s
 
-Parse.obj: Parse.cpp.obj
+Menu.obj: Menu.cpp.obj
 
-.PHONY : Parse.obj
+.PHONY : Menu.obj
 
 # target to build an object file
-Parse.cpp.obj:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj
-.PHONY : Parse.cpp.obj
+Menu.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Menu.cpp.obj
+.PHONY : Menu.cpp.obj
 
-Parse.i: Parse.cpp.i
+Menu.i: Menu.cpp.i
 
-.PHONY : Parse.i
+.PHONY : Menu.i
 
 # target to preprocess a source file
-Parse.cpp.i:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.i
-.PHONY : Parse.cpp.i
+Menu.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
 
-Parse.s: Parse.cpp.s
+Menu.s: Menu.cpp.s
 
-.PHONY : Parse.s
+.PHONY : Menu.s
 
 # target to generate assembly for a file
-Parse.cpp.s:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.s
-.PHONY : Parse.cpp.s
+Menu.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
 
 Point.obj: Point.cpp.obj
 
@@ -392,33 +392,6 @@ Utils.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Utils.cpp.s
 .PHONY : Utils.cpp.s
 
-Vehicle.obj: Vehicle.cpp.obj
-
-.PHONY : Vehicle.obj
-
-# target to build an object file
-Vehicle.cpp.obj:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj
-.PHONY : Vehicle.cpp.obj
-
-Vehicle.i: Vehicle.cpp.i
-
-.PHONY : Vehicle.i
-
-# target to preprocess a source file
-Vehicle.cpp.i:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.i
-.PHONY : Vehicle.cpp.i
-
-Vehicle.s: Vehicle.cpp.s
-
-.PHONY : Vehicle.s
-
-# target to generate assembly for a file
-Vehicle.cpp.s:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.s
-.PHONY : Vehicle.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -445,6 +418,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+parse.obj: parse.cpp.obj
+
+.PHONY : parse.obj
+
+# target to build an object file
+parse.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.obj
+.PHONY : parse.cpp.obj
+
+parse.i: parse.cpp.i
+
+.PHONY : parse.i
+
+# target to preprocess a source file
+parse.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.i
+.PHONY : parse.cpp.i
+
+parse.s: parse.cpp.s
+
+.PHONY : parse.s
+
+# target to generate assembly for a file
+parse.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.s
+.PHONY : parse.cpp.s
 
 # Help Target
 help:
@@ -473,9 +473,9 @@ help:
 	@echo ... GraphViewer/graphviewer.obj
 	@echo ... GraphViewer/graphviewer.i
 	@echo ... GraphViewer/graphviewer.s
-	@echo ... Parse.obj
-	@echo ... Parse.i
-	@echo ... Parse.s
+	@echo ... Menu.obj
+	@echo ... Menu.i
+	@echo ... Menu.s
 	@echo ... Point.obj
 	@echo ... Point.i
 	@echo ... Point.s
@@ -485,12 +485,12 @@ help:
 	@echo ... Utils.obj
 	@echo ... Utils.i
 	@echo ... Utils.s
-	@echo ... Vehicle.obj
-	@echo ... Vehicle.i
-	@echo ... Vehicle.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... parse.obj
+	@echo ... parse.i
+	@echo ... parse.s
 .PHONY : help
 
 
