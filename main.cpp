@@ -6,7 +6,6 @@
 #include "Utils.h"
 #include "Point.h"
 #include "Graph.h"
-#include "parse.h"
 #include "Company.h"
 #include "Menu.h"
 
@@ -27,18 +26,12 @@ int main()
 
 
 
-
-
-
-
-
-
     c.readDelivererFile("../Deliverers.txt");
 
 
 
     //VER SE ID DOS RESTAURANTES DAS DELIVERIES É UM RESTAURANTE NO RESTAURANTES TXT, se não erro
-    /*
+
     bool found=false;
     for(unsigned int i =0; i<c.getDeliveries().size();i++){
         for(unsigned int j=0; j<c.getRestaurants().size();j++){
@@ -54,12 +47,10 @@ int main()
             return -1;
         }
     }
-    */
+
 
     //LER GRAFOS
     //iniciar GRAPHVIEWER
-    //vector<Point> res;
-
 
     int city=opcaoCidade(c);
     int caso=opcaoCaso(c,city);
@@ -87,8 +78,6 @@ int main()
 
         cout << "Calculating route, please wait..." << endl;
 
-        //TODO:bidirectional dijkstra
-
         vector<Point> perfectPath;
 
 
@@ -97,152 +86,283 @@ int main()
         for(int i=0;i<perfectPath.size();i++){
             gv.setVertexColor(perfectPath[i].getID(), "green");
         }
-        gv.setVertexColor(perfectPath[0].getID(), "red");
+
         gv.setVertexColor(perfectPath[perfectPath.size()-1].getID(), "red");
+
+        gv.setVertexColor(perfectPath[0].getID(),"black");
+        gv.setVertexLabel(perfectPath[0].getID(),"origin");
 
         double dist=graph.findVertex(perfectPath[perfectPath.size()-1].getID())->getDist();
         cout<<"O estafeta encarregado da sua entrega e: "<<c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace()).getID()<<endl;
 
     }
 
-    else{
 
 
-        //Caso 2: mesmo cliente, várias deliveries de vários restaurantes
-        if(caso==2) {
 
-            vector<Point> temp_result, result;
+    //Caso 2: mesmo cliente, várias deliveries de vários restaurantes
+    if(caso==2) {
 
-            vector<Restaurant> deliveryRestaurants = c.getDeliveries()[0].getRestaurant();
-            double dist= 0;
-            int min_distance = 999999999;
-            int smallest_distance_index = 0;
+        vector<Point> temp_result, result;
+
+        vector<Restaurant> deliveryRestaurants = c.getDeliveries()[0].getRestaurant();
+        double dist= 0;
+        int min_distance = 999999999;
+        int smallest_distance_index = 0;
+
+        for (int i = 0; i < c.getDeliveries()[0].getRestaurant().size(); i++) {
+            graph.Astar(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
+
+            if (graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist() < min_distance) {
+                temp_result = graph.getPath(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
+                smallest_distance_index = i;
+                min_distance = graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist();
+            }
+        }
+
+        result.insert(result.end(),temp_result.begin(),temp_result.end());     //caminho mais rápido da casa do cliente ao primeiro restaurante
+
+
+        dist+=min_distance;
+        min_distance = 999999999;   //reset min_distance
+
+        int smallest_restaurant_distance = 0;
+        //percorrer restantes restaurantes e ver caminho mais rápido entre cada um deles; adicionar ao resultado final até terem sido visitados todos os restaurantes
+        while (c.getDeliveries()[0].getRestaurant().size() != 1){
+
+            min_distance = 999999999;
+
 
             for (int i = 0; i < c.getDeliveries()[0].getRestaurant().size(); i++) {
-                graph.Astar(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
+                if(i==smallest_distance_index) continue;
+
+                graph.Astar(c.getDeliveries()[0].getRestaurant()[smallest_distance_index].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
 
                 if (graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist() < min_distance) {
-                    temp_result = graph.getPath(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
-                    smallest_distance_index = i;
+                    temp_result = graph.getPath(c.getDeliveries()[0].getRestaurant()[smallest_distance_index].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
+                    smallest_restaurant_distance = i;
                     min_distance = graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist();
                 }
             }
-
-            result.insert(result.end(),temp_result.begin(),temp_result.end());     //caminho mais rápido da casa do cliente ao primeiro restaurante
-
-
             dist+=min_distance;
-            min_distance = 999999999;   //reset min_distance
-
-            int smallest_restaurant_distance = 0;
-            //percorrer restantes restaurantes e ver caminho mais rápido entre cada um deles; adicionar ao resultado final até terem sido visitados todos os restaurantes
-            while (c.getDeliveries()[0].getRestaurant().size() != 1){
-
-                min_distance = 999999999;
-
-
-                for (int i = 0; i < c.getDeliveries()[0].getRestaurant().size(); i++) {
-                    if(i==smallest_distance_index) continue;
-
-                    graph.Astar(c.getDeliveries()[0].getRestaurant()[smallest_distance_index].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
-
-                    if (graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist() < min_distance) {
-                        temp_result = graph.getPath(c.getDeliveries()[0].getRestaurant()[smallest_distance_index].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
-                        smallest_restaurant_distance = i;
-                        min_distance = graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist();
-                    }
-                }
-                dist+=min_distance;
-                result.insert(result.end(),temp_result.begin(),temp_result.end());
-                vector <Restaurant> r = c.getDeliveries()[0].getRestaurant();
-                r.erase(r.begin()+smallest_distance_index);
-                vector<Delivery> d = c.getDeliveries();
-                d[0].setRestaurant(r);
-                c.setDeliveries(d);
-                smallest_distance_index = smallest_restaurant_distance;
-
-            }
-
-            cout<<"O estafeta encarregado da sua entrega tem o ID: "<<c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace()).getID()<<endl;
-            for(int i=0;i<result.size();i++){
-                gv.setVertexColor(result[i].getID(), "green");
-            }
-            gv.setVertexColor(result[0].getID(), "red");
-
-            for(unsigned int i = 0;i<deliveryRestaurants.size();i++){
-                gv.setVertexColor(deliveryRestaurants[i].getId(), "red");
-            }
+            result.insert(result.end(),temp_result.begin(),temp_result.end());
+            vector <Restaurant> r = c.getDeliveries()[0].getRestaurant();
+            r.erase(r.begin()+smallest_distance_index);
+            vector<Delivery> d = c.getDeliveries();
+            d[0].setRestaurant(r);
+            c.setDeliveries(d);
+            smallest_distance_index = smallest_restaurant_distance;
 
         }
 
+        cout<<"O estafeta encarregado da sua entrega tem o ID: "<<c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace()).getID()<<endl;
+        for(int i=0;i<result.size();i++){
+            gv.setVertexColor(result[i].getID(), "green");
+        }
+        gv.setVertexColor(result[0].getID(), "red");
+
+        for(unsigned int i = 0;i<deliveryRestaurants.size();i++){
+            gv.setVertexColor(deliveryRestaurants[i].getId(), "red");
+        }
+
+        gv.setVertexColor(result[result.size()-1].getID(),"black");
+        gv.setVertexLabel(result[result.size()-1].getID(),"origin");
+    }
 
 
 
-
-        //Caso 3: mesmo restaurante, vários clientes
-
-
-        if(caso==3){
+    //Caso 3: mesmo restaurante, vários clientes
+    if(caso==3){
 
 
-            vector<Point> temp_result, result;
+        vector<Point> temp_result, result;
 
-            vector<Client> deliveryClients = c.getClients();
-            double dist= 0;
-            int min_distance = 999999999;
-            int smallest_distance_index = 0;
+        vector<Client> deliveryClients = c.getClients();
+        double dist= 0;
+        int min_distance = 999999999;
+        int smallest_distance_index = 0;
+
+        for (int i = 0; i < c.getClients().size(); i++) {
+            graph.Astar(c.getDeliveries()[0].getRestaurant()[0].getId(), c.getClients()[i].getId());
+            if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
+                temp_result = graph.getPath(c.getDeliveries()[0].getRestaurant()[0].getId(),c.getClients()[i].getId());
+                smallest_distance_index = i;
+                min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
+            }
+        }
+        dist+=min_distance;
+        result.insert(result.end(),temp_result.begin(),temp_result.end());
+
+
+        min_distance = 999999999;   //reset min_distance
+
+        int smallest_client_distance = 0;
+
+        while (c.getClients().size() != 1){
+
+            min_distance = 999999999;
+
 
             for (int i = 0; i < c.getClients().size(); i++) {
-                graph.Astar(c.getDeliveries()[0].getRestaurant()[0].getId(), c.getClients()[i].getId());
+                if(i==smallest_distance_index) continue;
+
+                graph.Astar(c.getClients()[smallest_distance_index].getId(), c.getClients()[i].getId());
+
                 if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
-                    temp_result = graph.getPath(c.getDeliveries()[0].getRestaurant()[0].getId(),c.getClients()[i].getId());
-                    smallest_distance_index = i;
+                    temp_result = graph.getPath(c.getClients()[smallest_distance_index].getId(), c.getClients()[i].getId());
+                    smallest_client_distance = i;
                     min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
                 }
             }
             dist+=min_distance;
             result.insert(result.end(),temp_result.begin(),temp_result.end());
+            vector <Client> cli = c.getClients();
+            cli.erase(cli.begin()+smallest_distance_index);
+            c.setClients(cli);
+            smallest_distance_index = smallest_client_distance;
+
+        }
+        cout<<"O estafeta encarregado da sua entrega tem o ID: "<<c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace()).getID()<<endl;
+        for(int i=0;i<result.size();i++){
+            gv.setVertexColor(result[i].getID(), "green");
+        }
+        gv.setVertexColor(result[0].getID(), "red");
+
+        for(unsigned int i = 0;i<deliveryClients.size();i++){
+            gv.setVertexColor(deliveryClients[i].getId(), "red");
+        }
+
+        gv.setVertexColor(result[0].getID(),"black");
+        gv.setVertexLabel(result[0].getID(),"origin");
+    }
 
 
-            min_distance = 999999999;   //reset min_distance
-
-            int smallest_client_distance = 0;
-
-            while (c.getClients().size() != 1){
-
-                min_distance = 999999999;
+    if(caso==4){
 
 
-                for (int i = 0; i < c.getClients().size(); i++) {
-                    if(i==smallest_distance_index) continue;
-
-                    graph.Astar(c.getClients()[smallest_distance_index].getId(), c.getClients()[i].getId());
-
-                    if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
-                        temp_result = graph.getPath(c.getClients()[smallest_distance_index].getId(), c.getClients()[i].getId());
-                        smallest_client_distance = i;
-                        min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
-                    }
-                }
-                dist+=min_distance;
-                result.insert(result.end(),temp_result.begin(),temp_result.end());
-                vector <Client> cli = c.getClients();
-                cli.erase(cli.begin()+smallest_distance_index);
-                c.setClients(cli);
-                smallest_distance_index = smallest_client_distance;
-
-            }
-            cout<<"O estafeta encarregado da sua entrega tem o ID: "<<c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace()).getID()<<endl;
-            for(int i=0;i<result.size();i++){
-                gv.setVertexColor(result[i].getID(), "green");
-            }
-            gv.setVertexColor(result[0].getID(), "red");
-
-            for(unsigned int i = 0;i<deliveryClients.size();i++){
-                gv.setVertexColor(deliveryClients[i].getId(), "red");
+        //make restaurant vector and client vector only have unique values
+        vector<Restaurant> r = c.getTotalDeliveryRestaurants();
+        sort(r.begin(),r.end());
+        for(unsigned int i=1; i< r.size();i++){
+            if(r[i-1].getId() == r[i].getId()){
+                r.erase(r.begin()+i);
             }
         }
+        c.setTotalDeliveryRestaurants(r);
+
+        vector<Client> cli = c.getClients();
+        sort(cli.begin(),cli.end());
+        for(unsigned int j=1;j<cli.size();j++){
+            if(cli[j-1].getId() == cli[j].getId()){
+                cli.erase(cli.begin()+j);
+            }
+        }
+        c.setClients(cli);
+
+
+        vector<Point> temp_result, result;
+        double dist= 0;
+        int min_distance = 999999999;
+        int smallest_distance_index = 0, temp_distance_index=0;
+
+
+        //goes to all restaurants first
+        while(c.getTotalDeliveryRestaurants().size() != 1) {
+
+
+            for (unsigned int i = 0; i < c.getTotalDeliveryRestaurants().size(); i++) {
+                if(smallest_distance_index == i) continue;
+
+                graph.Astar(c.getTotalDeliveryRestaurants()[smallest_distance_index].getId(),
+                              c.getTotalDeliveryRestaurants()[i].getId());
+
+                if (graph.findVertex(c.getTotalDeliveryRestaurants()[i].getId())->getDist() < min_distance) {
+                    temp_result = graph.getPath(c.getTotalDeliveryRestaurants()[smallest_distance_index].getId(),
+                                                c.getTotalDeliveryRestaurants()[i].getId());
+                    temp_distance_index = i;
+                    min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
+                }
+
+            }
+            if(smallest_distance_index<temp_distance_index){
+                temp_distance_index--;
+            }
+            vector<Restaurant> r = c.getTotalDeliveryRestaurants();
+            r.erase(r.begin()+smallest_distance_index);
+            c.setTotalDeliveryRestaurants(r);
+
+            smallest_distance_index = temp_distance_index;
+            min_distance=999999999;
+
+            result.insert(result.end(),temp_result.begin(),temp_result.end());
+
+        }
+
+        //then goes to all clients ( first to nearest client, then to the others)
+        min_distance=999999999;
+        int last_restaurant_index = smallest_distance_index;
+
+
+        for(unsigned int i=0;i<c.getClients().size();i++){
+            graph.Astar(c.getTotalDeliveryRestaurants()[last_restaurant_index].getId(),
+                          c.getClients()[i].getId());
+
+            if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
+                temp_result = graph.getPath(c.getTotalDeliveryRestaurants()[last_restaurant_index].getId(),
+                                            c.getClients()[i].getId());
+                smallest_distance_index = i;
+                min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
+            }
+        }
+
+        result.insert(result.end(),temp_result.begin(),temp_result.end());
+
+
+
+        while(c.getClients().size() != 1) {
+
+            for (unsigned int i = 0; i < c.getClients().size(); i++) {
+                if(smallest_distance_index == i)continue;
+
+                graph.Astar(c.getClients()[smallest_distance_index].getId(),
+                              c.getTotalDeliveryRestaurants()[i].getId());
+
+                if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
+                    temp_result = graph.getPath(c.getClients()[smallest_distance_index].getId(),
+                                                c.getTotalDeliveryRestaurants()[i].getId());
+                    temp_distance_index = i;
+                    min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
+                }
+
+            }
+            if(smallest_distance_index<temp_distance_index){
+                temp_distance_index--;
+            }
+            vector<Client> cli = c.getClients();
+            cli.erase(cli.begin()+smallest_distance_index);
+            c.setClients(cli);
+
+            smallest_distance_index = temp_distance_index;
+            min_distance=999999999;
+
+            result.insert(result.end(),temp_result.begin(),temp_result.end());
+
+        }
+
+        for(int i=0;i<result.size();i++){
+            gv.setVertexColor(result[i].getID(), "green");
+        }
+
+        for(unsigned int i=0;i<r.size();i++){
+            gv.setVertexColor(r[i].getId(), "red");
+        }
+
+        for(unsigned int i=0;i<cli.size();i++){
+            gv.setVertexColor(cli[i].getId(), "red");
+        }
+
     }
+
 
 
     system("pause");

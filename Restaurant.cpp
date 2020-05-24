@@ -20,3 +20,19 @@ void Restaurant::setId(int i) {
 Restaurant::~Restaurant() {
 
 }
+
+bool Restaurant::operator<(const Restaurant &rhs) const {
+    return id < rhs.id;
+}
+
+bool Restaurant::operator>(const Restaurant &rhs) const {
+    return rhs < *this;
+}
+
+bool Restaurant::operator<=(const Restaurant &rhs) const {
+    return !(rhs < *this);
+}
+
+bool Restaurant::operator>=(const Restaurant &rhs) const {
+    return !(*this < rhs);
+}

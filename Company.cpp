@@ -43,6 +43,7 @@ void Company::readDeliveriesFile(string file) {
         while(temp!="..........") {
 
             d.addRestaurant(Restaurant(mstoi(temp)));
+            totalDeliveryRestaurants.push_back(Restaurant(mstoi(temp)));
             getline(delivery_file, temp);
         }
 
@@ -117,6 +118,14 @@ Deliverer Company::decideDeliverer(double distancia,int espaco) {
     }
     return d;
 
+}
+
+vector<Restaurant> Company::getTotalDeliveryRestaurants() {
+    return totalDeliveryRestaurants;
+}
+
+void Company::setTotalDeliveryRestaurants(vector<Restaurant> r) {
+    this->totalDeliveryRestaurants=r;
 }
 
 

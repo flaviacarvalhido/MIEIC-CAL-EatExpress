@@ -154,19 +154,19 @@ CMakeFiles/EATEXPRESS.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\main.cpp -o CMakeFiles\EATEXPRESS.dir\main.cpp.s
 
-CMakeFiles/EATEXPRESS.dir/parse.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
-CMakeFiles/EATEXPRESS.dir/parse.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
-CMakeFiles/EATEXPRESS.dir/parse.cpp.obj: ../parse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EATEXPRESS.dir/parse.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\parse.cpp.obj -c C:\Users\joao\Desktop\CAL2\parse.cpp
+CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
+CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
+CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj: ../Parse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joao\Desktop\CAL2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EATEXPRESS.dir\Parse.cpp.obj -c C:\Users\joao\Desktop\CAL2\Parse.cpp
 
-CMakeFiles/EATEXPRESS.dir/parse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EATEXPRESS.dir/parse.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joao\Desktop\CAL2\parse.cpp > CMakeFiles\EATEXPRESS.dir\parse.cpp.i
+CMakeFiles/EATEXPRESS.dir/Parse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EATEXPRESS.dir/Parse.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joao\Desktop\CAL2\Parse.cpp > CMakeFiles\EATEXPRESS.dir\Parse.cpp.i
 
-CMakeFiles/EATEXPRESS.dir/parse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/parse.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\parse.cpp -o CMakeFiles\EATEXPRESS.dir\parse.cpp.s
+CMakeFiles/EATEXPRESS.dir/Parse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EATEXPRESS.dir/Parse.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joao\Desktop\CAL2\Parse.cpp -o CMakeFiles\EATEXPRESS.dir\Parse.cpp.s
 
 CMakeFiles/EATEXPRESS.dir/Point.cpp.obj: CMakeFiles/EATEXPRESS.dir/flags.make
 CMakeFiles/EATEXPRESS.dir/Point.cpp.obj: CMakeFiles/EATEXPRESS.dir/includes_CXX.rsp
@@ -233,7 +233,7 @@ EATEXPRESS_OBJECTS = \
 "CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/main.cpp.obj" \
-"CMakeFiles/EATEXPRESS.dir/parse.cpp.obj" \
+"CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Point.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj" \
 "CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj" \
@@ -249,7 +249,7 @@ EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Company.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Deliverer.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Delivery.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/main.cpp.obj
-EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/parse.cpp.obj
+EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Point.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Restaurant.cpp.obj
 EATEXPRESS.exe: CMakeFiles/EATEXPRESS.dir/Utils.cpp.obj

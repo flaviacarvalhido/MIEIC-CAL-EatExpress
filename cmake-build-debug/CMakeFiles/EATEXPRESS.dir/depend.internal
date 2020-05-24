@@ -42,10 +42,20 @@ CMakeFiles/EATEXPRESS.dir/Menu.cpp.obj
  C:/Users/joao/Desktop/CAL2/Menu.cpp
  C:/Users/joao/Desktop/CAL2/Menu.h
  C:/Users/joao/Desktop/CAL2/MutablePriorityQueue.h
+ C:/Users/joao/Desktop/CAL2/Parse.h
  C:/Users/joao/Desktop/CAL2/Point.h
  C:/Users/joao/Desktop/CAL2/Restaurant.h
  C:/Users/joao/Desktop/CAL2/Utils.h
- C:/Users/joao/Desktop/CAL2/parse.h
+CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj
+ ../GraphViewer/connection.h
+ ../GraphViewer/edgetype.h
+ ../GraphViewer/graphviewer.h
+ C:/Users/joao/Desktop/CAL2/Graph.h
+ C:/Users/joao/Desktop/CAL2/MutablePriorityQueue.h
+ C:/Users/joao/Desktop/CAL2/Parse.cpp
+ C:/Users/joao/Desktop/CAL2/Parse.h
+ C:/Users/joao/Desktop/CAL2/Point.h
+ C:/Users/joao/Desktop/CAL2/Utils.h
 CMakeFiles/EATEXPRESS.dir/Point.cpp.obj
  C:/Users/joao/Desktop/CAL2/Point.cpp
  C:/Users/joao/Desktop/CAL2/Point.h
@@ -66,18 +76,8 @@ CMakeFiles/EATEXPRESS.dir/main.cpp.obj
  C:/Users/joao/Desktop/CAL2/Graph.h
  C:/Users/joao/Desktop/CAL2/Menu.h
  C:/Users/joao/Desktop/CAL2/MutablePriorityQueue.h
+ C:/Users/joao/Desktop/CAL2/Parse.h
  C:/Users/joao/Desktop/CAL2/Point.h
  C:/Users/joao/Desktop/CAL2/Restaurant.h
  C:/Users/joao/Desktop/CAL2/Utils.h
  C:/Users/joao/Desktop/CAL2/main.cpp
- C:/Users/joao/Desktop/CAL2/parse.h
-CMakeFiles/EATEXPRESS.dir/parse.cpp.obj
- ../GraphViewer/connection.h
- ../GraphViewer/edgetype.h
- ../GraphViewer/graphviewer.h
- C:/Users/joao/Desktop/CAL2/Graph.h
- C:/Users/joao/Desktop/CAL2/MutablePriorityQueue.h
- C:/Users/joao/Desktop/CAL2/Point.h
- C:/Users/joao/Desktop/CAL2/Utils.h
- C:/Users/joao/Desktop/CAL2/parse.cpp
- C:/Users/joao/Desktop/CAL2/parse.h

@@ -13,6 +13,14 @@ public:
 
     int getId();
     void setId(int i);
+
+    bool operator<(const Restaurant &rhs) const;
+
+    bool operator>(const Restaurant &rhs) const;
+
+    bool operator<=(const Restaurant &rhs) const;
+
+    bool operator>=(const Restaurant &rhs) const;
 };
 
 
