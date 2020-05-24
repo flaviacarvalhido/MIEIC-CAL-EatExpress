@@ -1,5 +1,7 @@
-
-#include "parse.h"
+//
+// Created by joao on 20/05/2020.
+//
+#include "Parse.h"
 
 
 
@@ -76,9 +78,13 @@ void parseEdges(const string path_to_edges) {
 }
 
 void parsePorto() {
-    graph = Graph<Point>();
+
     parseNodes("../PortugalMaps/Porto/nodes_x_y_porto.txt");
     parseEdges("../PortugalMaps/Porto/edges_porto.txt");
+}
+void parseViseu() {
+    parseNodes("../PortugalMaps/Viseu/nodes_x_y_viseu.txt");
+    parseEdges("../PortugalMaps/Viseu/edges_viseu.txt");
 }
 
 GraphViewer buildGraphViewer(Graph<Point> & temp_graph) {
@@ -88,7 +94,7 @@ GraphViewer buildGraphViewer(Graph<Point> & temp_graph) {
     gv.defineEdgeColor("black");
 
     double yPercent, xPercent;
-    cout << graph.getNumVertex() << endl;
+
     Vertex<Point>* p = graph.findIdxVertex(0);
 
     double minX = p->getInfo().getX();

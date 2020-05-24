@@ -6,24 +6,27 @@
 #define EATEXPRESS_DELIVERER_H
 
 
-#include "Vehicle.h"
+
 
 class Deliverer {
 private:
     int id;
     bool isFree;
-    Vehicle vehicle;
+    int espaco;
+    float vMed;
 
 public:
     Deliverer();
-    Deliverer(int id, Vehicle v);
+    Deliverer(int id);
     ~Deliverer();
 
     void setID(int id);
     int getID();
+    int getEspaco();
+    void setEspaco(int espaco);
+    float getvMed();
+    void setvMed(float vMed);
 
-    void setVehicle(Vehicle v);
-    Vehicle getVehicle();
 
     void setIsFree(bool free);
     bool getIsFree();

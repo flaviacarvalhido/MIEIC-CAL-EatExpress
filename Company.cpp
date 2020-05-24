@@ -2,6 +2,7 @@
 // Created by joao on 23/05/2020.
 //
 
+#include <iostream>
 #include "Company.h"
 
 
@@ -62,7 +63,6 @@ void Company::readDelivererFile(string file) {
     deliverer_file.open(file);
     while (!deliverer_file.eof()) {
         Deliverer d = Deliverer();
-        Vehicle v = Vehicle();
         getline(deliverer_file, temp);
         if (temp != "::::::::::") d.setID(mstoi(temp));
         else {
@@ -70,20 +70,11 @@ void Company::readDelivererFile(string file) {
             d.setID(mstoi(temp));
         }
         getline(deliverer_file, temp);
-        d.setIsFree(true);
+        d.setvMed(stof(temp));
         getline(deliverer_file, temp);
-        if (temp == "::::::::::") continue;
-        v.setMarca(temp);
+        d.setEspaco(mstoi(temp));
         getline(deliverer_file, temp);
-        if (temp == "::::::::::") continue;
-        v.setvMed(mstoi(temp));
-        getline(deliverer_file, temp);
-        if (temp == "::::::::::") continue;
-        v.setEspaco(mstoi(temp));
-        getline(deliverer_file, temp);
-        if (temp == "::::::::::") continue;
-        v.setAno(mstoi(temp));
-        d.setVehicle(v);
+        d.setIsFree(mstoi(temp));
         deliverers.push_back(d);
     }
 }
@@ -104,13 +95,28 @@ vector<Delivery> Company::getDeliveries() {
     return deliveries;
 }
 
+void Company::setDeliveries(vector<Delivery> d) {
+    this->deliveries=d;
+}
 
-/*
-void Company::decideDeliverer(Point p) {
+void Company::setClients(vector<Client> c) {
+    this->clients=c;
+}
+
+
+
+Deliverer Company::decideDeliverer(double distancia,int espaco) {
+    Deliverer d = deliverers[0];
     for(int i =0 ;i<deliverers.size(); i++){
-        if(deli)
+        if(deliverers[i].getEspaco()>=espaco){
+            if(((distancia/1000)/deliverers[i].getvMed())*60<=30){
+                d=deliverers[i];
+                break;
+            }
+        }
     }
+    return d;
 
 }
-*/
+
 

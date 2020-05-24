@@ -24,13 +24,12 @@ add_executable(EATEXPRESS
         Graph.h
         main.cpp
         MutablePriorityQueue.h
-        parse.cpp
-        parse.h
+        Parse.cpp
+        Parse.h
         Point.cpp
         Point.h
         Restaurant.cpp
         Restaurant.h
         Utils.cpp
         Utils.h
-        Vehicle.cpp
-        Vehicle.h)
+        Menu.cpp Menu.h)

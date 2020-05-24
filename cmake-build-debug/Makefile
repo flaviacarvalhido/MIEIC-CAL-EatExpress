@@ -284,6 +284,33 @@ GraphViewer/graphviewer.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/GraphViewer/graphviewer.cpp.s
 .PHONY : GraphViewer/graphviewer.cpp.s
 
+Menu.obj: Menu.cpp.obj
+
+.PHONY : Menu.obj
+
+# target to build an object file
+Menu.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Menu.cpp.obj
+.PHONY : Menu.cpp.obj
+
+Menu.i: Menu.cpp.i
+
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
 Point.obj: Point.cpp.obj
 
 .PHONY : Point.obj
@@ -364,33 +391,6 @@ Utils.s: Utils.cpp.s
 Utils.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Utils.cpp.s
 .PHONY : Utils.cpp.s
-
-Vehicle.obj: Vehicle.cpp.obj
-
-.PHONY : Vehicle.obj
-
-# target to build an object file
-Vehicle.cpp.obj:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.obj
-.PHONY : Vehicle.cpp.obj
-
-Vehicle.i: Vehicle.cpp.i
-
-.PHONY : Vehicle.i
-
-# target to preprocess a source file
-Vehicle.cpp.i:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.i
-.PHONY : Vehicle.cpp.i
-
-Vehicle.s: Vehicle.cpp.s
-
-.PHONY : Vehicle.s
-
-# target to generate assembly for a file
-Vehicle.cpp.s:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Vehicle.cpp.s
-.PHONY : Vehicle.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -473,6 +473,9 @@ help:
 	@echo ... GraphViewer/graphviewer.obj
 	@echo ... GraphViewer/graphviewer.i
 	@echo ... GraphViewer/graphviewer.s
+	@echo ... Menu.obj
+	@echo ... Menu.i
+	@echo ... Menu.s
 	@echo ... Point.obj
 	@echo ... Point.i
 	@echo ... Point.s
@@ -482,9 +485,6 @@ help:
 	@echo ... Utils.obj
 	@echo ... Utils.i
 	@echo ... Utils.s
-	@echo ... Vehicle.obj
-	@echo ... Vehicle.i
-	@echo ... Vehicle.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
