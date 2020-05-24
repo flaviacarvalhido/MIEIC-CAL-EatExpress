@@ -115,7 +115,6 @@ int main()
 
 
         //Caso 2: mesmo cliente, várias deliveries de vários restaurantes
-
         if(c.getClients().size()==1) {
 
             vector<Point> temp_result, result;
@@ -126,7 +125,7 @@ int main()
             int smallest_distance_index = 0;
 
             for (int i = 0; i < c.getDeliveries()[0].getRestaurant().size(); i++) {
-                graph.Astar(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());           //segmentation fault when running second time, check if we can run algorithm more than once and if not whats the origin and the destination to calculate every closest path
+                graph.Astar(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
 
                 if (graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist() < min_distance) {
                     temp_result = graph.getPath(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
@@ -177,6 +176,81 @@ int main()
 
             for(unsigned int i = 0;i<deliveryRestaurants.size();i++){
                 gv.setVertexColor(deliveryRestaurants[i].getId(), "red");
+            }
+        }
+
+
+
+
+
+        //Caso 3: mesmo restaurante, vários clientes
+        bool same_r=true;
+        for(unsigned int i=1; i< c.getDeliveries().size();i++){
+            for(unsigned int j=0; j < c.getDeliveries()[i].getRestaurant().size();j++){
+                if(c.getDeliveries()[i].getRestaurant()[j].getId() != c.getDeliveries()[i-1].getRestaurant()[j].getId() || c.getDeliveries()[i].getRestaurant().size() != 1){
+                    same_r = false;
+                }
+            }
+        }
+
+        if(c.getClients().size()!=1 && same_r){
+
+            cout << "sou o caso 3" << endl;
+            vector<Point> temp_result, result;
+
+            vector<Client> deliveryClients = c.getClients();
+
+            int min_distance = 999999999;
+            int smallest_distance_index = 0;
+
+            for (int i = 0; i < c.getClients().size(); i++) {
+                graph.Astar(c.getDeliveries()[0].getRestaurant()[0].getId(), c.getClients()[i].getId());
+                if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
+                    temp_result = graph.getPath(c.getDeliveries()[0].getRestaurant()[0].getId(),c.getClients()[i].getId());
+                    smallest_distance_index = i;
+                    min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
+                }
+            }
+
+            result.insert(result.end(),temp_result.begin(),temp_result.end());
+
+
+            min_distance = 999999999;   //reset min_distance
+
+            int smallest_client_distance = 0;
+
+            while (c.getClients().size() != 1){
+
+                min_distance = 999999999;
+
+
+                for (int i = 0; i < c.getClients().size(); i++) {
+                    if(i==smallest_distance_index) continue;
+
+                    graph.Astar(c.getClients()[smallest_distance_index].getId(), c.getClients()[i].getId());
+
+                    if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
+                        temp_result = graph.getPath(c.getClients()[smallest_distance_index].getId(), c.getClients()[i].getId());
+                        smallest_client_distance = i;
+                        min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
+                    }
+                }
+
+                result.insert(result.end(),temp_result.begin(),temp_result.end());
+                vector <Client> cli = c.getClients();
+                cli.erase(cli.begin()+smallest_distance_index);
+                c.setClients(cli);
+                smallest_distance_index = smallest_client_distance;
+
+            }
+
+            for(int i=0;i<result.size();i++){
+                gv.setVertexColor(result[i].getID(), "green");
+            }
+            gv.setVertexColor(result[0].getID(), "red");
+
+            for(unsigned int i = 0;i<deliveryClients.size();i++){
+                gv.setVertexColor(deliveryClients[i].getId(), "red");
             }
         }
     }

@@ -581,7 +581,6 @@ bool Graph<T>::aStarRelax(Vertex<T> *v, Vertex<T> *w, Vertex<T> *dest, double we
 
     if (v->dist + weight < w->dist){
         w->dist = v->dist + weight;
-        //w->comparing_var = v->dist + weight + abs(w->x - dest->x) + abs(w->y - dest->y);
         w->path = v;
         return true;
     }

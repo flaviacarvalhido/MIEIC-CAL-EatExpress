@@ -108,6 +108,10 @@ void Company::setDeliveries(vector<Delivery> d) {
     this->deliveries=d;
 }
 
+void Company::setClients(vector<Client> c) {
+    this->clients=c;
+}
+
 
 /*
 void Company::decideDeliverer(Point p) {
