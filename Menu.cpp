@@ -10,7 +10,7 @@ void selecaoCaso() {
     cout << "1 - Uma encomenda com itens de apenas um restaurante" << endl;
     cout << "2 - Uma encomenda com itens de varios restaurantes" << endl;
     cout << "3 - Varias encomendas para clientes diferentes do mesmo restaurante" << endl;
-    cout << "4 - Várias encomendas de vários clientes e de vários restaurantes" << endl;
+    cout << "4 - Varias encomendas de varios clientes e de varios restaurantes" << endl;
     cout << "0 - Exit" << endl;
 }
 void selecaoCidade(){
@@ -19,7 +19,7 @@ void selecaoCidade(){
     cout << "2 - Viseu" << endl;
     cout << "0 - Exit" << endl;
 }
-int opcaoCidade() {
+int opcaoCidade(Company &c) {
 
     int menuOption;
 
@@ -32,10 +32,12 @@ int opcaoCidade() {
 
                 return 0;
             case 1: // Porto
+                c.readRestaurantFile("../Restaurants.txt");
                 parsePorto();
                 return 1;
             case 2: // Viseu
-                //parseViseu
+                c.readRestaurantFile("../restaurantsViseu.txt");
+                parseViseu();
                 return 2;
 
             default:
@@ -58,17 +60,19 @@ int opcaoCaso(Company &c,int city) {
                 return 0;
             case 1:
                 if(city==1) c.readDeliveriesFile("../Deliveries.txt");
-                //viseufile
+                if(city==2) c.readDeliveriesFile("../DeliveriesViseu.txt");
                 return 1;
             case 2:
                 if(city==1) c.readDeliveriesFile("../Deliveries2.txt");
-                //segundo caso
+                if(city==2) c.readDeliveriesFile("../DeliveriesViseu2.txt");
                 return 2;
             case 3:
                 if(city==1) c.readDeliveriesFile("../Deliveries3.txt");
+                if(city==2) c.readDeliveriesFile("../DeliveriesViseu3.txt");
                 return 3;
             case 4:
                 if(city==1) c.readDeliveriesFile("../Deliveries4.txt");
+                if(city==2) c.readDeliveriesFile("../DeliveriesViseu4.txt");
                 return 4;
             default:
                 cout << "Invalid input" << endl;

@@ -311,6 +311,33 @@ Menu.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
+Parse.obj: Parse.cpp.obj
+
+.PHONY : Parse.obj
+
+# target to build an object file
+Parse.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj
+.PHONY : Parse.cpp.obj
+
+Parse.i: Parse.cpp.i
+
+.PHONY : Parse.i
+
+# target to preprocess a source file
+Parse.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.i
+.PHONY : Parse.cpp.i
+
+Parse.s: Parse.cpp.s
+
+.PHONY : Parse.s
+
+# target to generate assembly for a file
+Parse.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Parse.cpp.s
+.PHONY : Parse.cpp.s
+
 Point.obj: Point.cpp.obj
 
 .PHONY : Point.obj
@@ -419,33 +446,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-parse.obj: parse.cpp.obj
-
-.PHONY : parse.obj
-
-# target to build an object file
-parse.cpp.obj:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.obj
-.PHONY : parse.cpp.obj
-
-parse.i: parse.cpp.i
-
-.PHONY : parse.i
-
-# target to preprocess a source file
-parse.cpp.i:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.i
-.PHONY : parse.cpp.i
-
-parse.s: parse.cpp.s
-
-.PHONY : parse.s
-
-# target to generate assembly for a file
-parse.cpp.s:
-	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/parse.cpp.s
-.PHONY : parse.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -476,6 +476,9 @@ help:
 	@echo ... Menu.obj
 	@echo ... Menu.i
 	@echo ... Menu.s
+	@echo ... Parse.obj
+	@echo ... Parse.i
+	@echo ... Parse.s
 	@echo ... Point.obj
 	@echo ... Point.i
 	@echo ... Point.s
@@ -488,9 +491,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... parse.obj
-	@echo ... parse.i
-	@echo ... parse.s
 .PHONY : help
 
 

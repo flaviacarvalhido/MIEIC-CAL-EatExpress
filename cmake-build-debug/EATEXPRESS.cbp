@@ -135,6 +135,12 @@
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/MutablePriorityQueue.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.cpp">
+			<Option target="EATEXPRESS"/>
+		</Unit>
+		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.h">
+			<Option target="EATEXPRESS"/>
+		</Unit>
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.cpp">
 			<Option target="EATEXPRESS"/>
 		</Unit>
@@ -154,12 +160,6 @@
 			<Option target="EATEXPRESS"/>
 		</Unit>
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/main.cpp">
-			<Option target="EATEXPRESS"/>
-		</Unit>
-		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/parse.cpp">
-			<Option target="EATEXPRESS"/>
-		</Unit>
-		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/parse.h">
 			<Option target="EATEXPRESS"/>
 		</Unit>
 		<Unit filename="C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/CMakeLists.txt">

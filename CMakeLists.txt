@@ -23,6 +23,8 @@ add_executable(EATEXPRESS
         Delivery.h
         Graph.h
         main.cpp
+        Menu.cpp
+        Menu.h
         MutablePriorityQueue.h
         Parse.cpp
         Parse.h
@@ -31,5 +33,4 @@ add_executable(EATEXPRESS
         Restaurant.cpp
         Restaurant.h
         Utils.cpp
-        Utils.h
-        Menu.cpp Menu.h)
+        Utils.h)

@@ -6,7 +6,6 @@
 #include "Utils.h"
 #include "Point.h"
 #include "Graph.h"
-#include "parse.h"
 #include "Company.h"
 #include "Menu.h"
 
@@ -28,7 +27,7 @@ int main()
 
 
     c.readDelivererFile("../Deliverers.txt");
-    c.readRestaurantFile("../Restaurants.txt");
+
 
 
     //VER SE ID DOS RESTAURANTES DAS DELIVERIES É UM RESTAURANTE NO RESTAURANTES TXT, se não erro
@@ -53,7 +52,7 @@ int main()
     //LER GRAFOS
     //iniciar GRAPHVIEWER
 
-    int city=opcaoCidade();
+    int city=opcaoCidade(c);
     int caso=opcaoCaso(c,city);
 
     graph.bfs(c.getDeliveries()[0].getClient().getId());
@@ -71,10 +70,15 @@ int main()
     //CASO BASE: UMA ENTREGA, UM RESTAURANTE, UM ESTAFETA, UM CLIENTE
     if(caso==1) {
 
-        c.readDeliveriesFile("../Deliveries.txt");
+
         if(!graph.findVertex(c.getDeliveries()[0].getClient().getId())->getVisited()){
-            cout << "Client address is not reacheable from restaurant. Delivery cannot be made" << endl;
-            return -2;
+            cout << "Client with ID " << c.getDeliveries()[0].getClient().getId() << "is not reacheable. Can't reach this destination, try another one."<<endl;
+            return -3;
+        }
+
+        if(!graph.findVertex(c.getDeliveries()[0].getRestaurant()[0].getId())->getVisited()){
+            cout << "Restaurant with ID " << c.getDeliveries()[0].getRestaurant()[0].getId() << "is not reacheable. Can't reach this destination, try another one."<<endl;
+            return -3;
         }
 
         cout << "Calculating route, please wait..." << endl;
@@ -82,7 +86,7 @@ int main()
         vector<Point> perfectPath;
 
 
-        graph.dijkstraShortestPath(c.getDeliveries()[0].getRestaurant()[0].getId()); //for now its just unidirectional dijkstra
+        graph.dijkstraShortestPath(c.getDeliveries()[0].getRestaurant()[0].getId());
         perfectPath = graph.getPath(c.getDeliveries()[0].getRestaurant()[0].getId(),c.getDeliveries()[0].getClient().getId());
         for(int i=0;i<perfectPath.size();i++){
             gv.setVertexColor(perfectPath[i].getID(), "green");
@@ -110,6 +114,17 @@ int main()
         double dist= 0;
         int min_distance = 999999999;
         int smallest_distance_index = 0;
+
+        for(unsigned int i=0;i<deliveryRestaurants.size();i++){
+            if(!graph.findVertex(deliveryRestaurants[i].getId())->getVisited()){
+                cout << "Restaurant with ID " << deliveryRestaurants[i].getId() << "is not reacheable. Can't reach this destination, try another one."<<endl;
+                return -3;
+            }
+        }
+        if(!graph.findVertex(c.getClients()[0].getId())->getVisited()){
+            cout << "Client with ID " << c.getClients()[0].getId() << "is not reacheable. Can't reach this destination, try another one."<<endl;
+            return -3;
+        }
 
         for (int i = 0; i < c.getDeliveries()[0].getRestaurant().size(); i++) {
             graph.Astar(c.getClients()[0].getId(), c.getDeliveries()[0].getRestaurant()[i].getId());
@@ -145,6 +160,11 @@ int main()
                     min_distance = graph.findVertex(c.getDeliveries()[0].getRestaurant()[i].getId())->getDist();
                 }
             }
+
+            if(smallest_restaurant_distance > smallest_distance_index){
+                smallest_restaurant_distance--;
+            }
+
             dist+=min_distance;
             result.insert(result.end(),temp_result.begin(),temp_result.end());
             vector <Restaurant> r = c.getDeliveries()[0].getRestaurant();
@@ -183,6 +203,17 @@ int main()
         int min_distance = 999999999;
         int smallest_distance_index = 0;
 
+        for(unsigned int i=0;i<deliveryClients.size();i++){
+            if(!graph.findVertex(deliveryClients[i].getId())->getVisited()){
+                cout << "Client with ID " << deliveryClients[i].getId() << "is not reacheable. Can't reach this destination, try another one."<<endl;
+                return -3;
+            }
+        }
+        if(!graph.findVertex(c.getDeliveries()[0].getRestaurant()[0].getId())->getVisited()){
+            cout << "Restaurant with ID " << c.getDeliveries()[0].getRestaurant()[0].getId() << "is not reacheable. Can't reach this destination, try another one."<<endl;
+            return -3;
+        }
+
         for (int i = 0; i < c.getClients().size(); i++) {
             graph.Astar(c.getDeliveries()[0].getRestaurant()[0].getId(), c.getClients()[i].getId());
             if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
@@ -215,6 +246,11 @@ int main()
                     min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
                 }
             }
+
+            if(smallest_client_distance > smallest_distance_index){
+                smallest_client_distance--;
+            }
+
             dist+=min_distance;
             result.insert(result.end(),temp_result.begin(),temp_result.end());
             vector <Client> cli = c.getClients();
@@ -249,6 +285,12 @@ int main()
                 r.erase(r.begin()+i);
             }
         }
+        for(unsigned int i=0;i<r.size();i++){
+            if(!graph.findVertex(r[i].getId())->getVisited()){
+                cout << "Restaurant with ID " << r[i].getId() << "is not reacheable. Can't reach this destination, try another one."<<endl;
+                return -3;
+            }
+        }
         c.setTotalDeliveryRestaurants(r);
 
         vector<Client> cli = c.getClients();
@@ -256,6 +298,12 @@ int main()
         for(unsigned int j=1;j<cli.size();j++){
             if(cli[j-1].getId() == cli[j].getId()){
                 cli.erase(cli.begin()+j);
+            }
+        }
+        for(unsigned int i=0;i<cli.size();i++){
+            if(!graph.findVertex(cli[i].getId())->getVisited()){
+                cout << "Client with ID " << cli[i].getId() << "is not reacheable. Can't reach this destination, try another one."<<endl;
+                return -3;
             }
         }
         c.setClients(cli);
@@ -274,10 +322,9 @@ int main()
             for (unsigned int i = 0; i < c.getTotalDeliveryRestaurants().size(); i++) {
                 if(smallest_distance_index == i) continue;
 
-                graph.Astar(c.getTotalDeliveryRestaurants()[smallest_distance_index].getId(),
-                              c.getTotalDeliveryRestaurants()[i].getId());
+                graph.Astar(c.getTotalDeliveryRestaurants()[smallest_distance_index].getId(),c.getTotalDeliveryRestaurants()[i].getId());
 
-                if (graph.findVertex(c.getTotalDeliveryRestaurants()[i].getId())->getDist() < min_distance) {
+                if (graph.findVertex(c.getTotalDeliveryRestaurants()[i].getId())->getDist() < min_distance && graph.findVertex(c.getTotalDeliveryRestaurants()[i].getId())->getVisited()) {
                     temp_result = graph.getPath(c.getTotalDeliveryRestaurants()[smallest_distance_index].getId(),
                                                 c.getTotalDeliveryRestaurants()[i].getId());
                     temp_distance_index = i;
@@ -285,7 +332,9 @@ int main()
                 }
 
             }
-
+            if(smallest_distance_index<temp_distance_index){
+                temp_distance_index--;
+            }
             vector<Restaurant> r = c.getTotalDeliveryRestaurants();
             r.erase(r.begin()+smallest_distance_index);
             c.setTotalDeliveryRestaurants(r);
@@ -299,12 +348,11 @@ int main()
 
         //then goes to all clients ( first to nearest client, then to the others)
         min_distance=999999999;
-        int last_restaurant_index = smallest_distance_index;
+        int last_restaurant_index = 0;
 
 
         for(unsigned int i=0;i<c.getClients().size();i++){
-            graph.Astar(c.getTotalDeliveryRestaurants()[last_restaurant_index].getId(),
-                          c.getClients()[i].getId());
+            graph.Astar(c.getTotalDeliveryRestaurants()[last_restaurant_index].getId(),c.getClients()[i].getId());
 
             if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
                 temp_result = graph.getPath(c.getTotalDeliveryRestaurants()[last_restaurant_index].getId(),
@@ -314,25 +362,30 @@ int main()
             }
         }
 
+
         result.insert(result.end(),temp_result.begin(),temp_result.end());
 
 
-
-        while(c.getClients().size() != 1) {
+        //percorrer restantes clientes
+        while(c.getClients().size()!=1) {
 
             for (unsigned int i = 0; i < c.getClients().size(); i++) {
                 if(smallest_distance_index == i)continue;
 
-                graph.Astar(c.getClients()[smallest_distance_index].getId(),
-                              c.getTotalDeliveryRestaurants()[i].getId());
+                graph.Astar(c.getClients()[smallest_distance_index].getId(),c.getTotalDeliveryRestaurants()[i].getId());
 
-                if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance) {
+                if (graph.findVertex(c.getClients()[i].getId())->getDist() < min_distance && graph.findVertex(c.getClients()[i].getId())->getVisited()) {
                     temp_result = graph.getPath(c.getClients()[smallest_distance_index].getId(),
-                                                c.getTotalDeliveryRestaurants()[i].getId());
+                                                c.getClients()[i].getId());
                     temp_distance_index = i;
                     min_distance = graph.findVertex(c.getClients()[i].getId())->getDist();
                 }
 
+            }
+
+
+            if(smallest_distance_index<temp_distance_index){
+                temp_distance_index--;
             }
 
             vector<Client> cli = c.getClients();
@@ -357,6 +410,9 @@ int main()
         for(unsigned int i=0;i<cli.size();i++){
             gv.setVertexColor(cli[i].getId(), "red");
         }
+
+        gv.setVertexColor(result[0].getID(),"black");
+        gv.setVertexLabel(result[0].getID(),"origin");
 
     }
 
