@@ -46,16 +46,6 @@ CMakeFiles/EATEXPRESS.dir/Menu.cpp.obj
  C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
  C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h
  C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
-CMakeFiles/EATEXPRESS.dir/Parse.cpp.obj
- ../GraphViewer/connection.h
- ../GraphViewer/edgetype.h
- ../GraphViewer/graphviewer.h
- C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Graph.h
- C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/MutablePriorityQueue.h
- C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.cpp
- C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.h
- C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
- C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
 CMakeFiles/EATEXPRESS.dir/Point.cpp.obj
  C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.cpp
  C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
@@ -81,3 +71,13 @@ CMakeFiles/EATEXPRESS.dir/main.cpp.obj
  C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h
  C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
  C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/main.cpp
+CMakeFiles/EATEXPRESS.dir/parse.cpp.obj
+ ../GraphViewer/connection.h
+ ../GraphViewer/edgetype.h
+ ../GraphViewer/graphviewer.h
+ C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Graph.h
+ C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/MutablePriorityQueue.h
+ C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.cpp
+ C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.h
+ C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
+ C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h

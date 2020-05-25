@@ -48,42 +48,6 @@ edgetype.h
 connection.h
 ../GraphViewer/connection.h
 
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Client.h
-string
--
-fstream
--
-
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Company.h
-string
--
-vector
--
-Client.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Client.h
-Restaurant.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h
-Deliverer.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Deliverer.h
-Utils.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
-Delivery.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Delivery.h
-Point.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
-
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Deliverer.h
-
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Delivery.h
-vector
--
-Client.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Client.h
-Restaurant.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h
-Deliverer.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Deliverer.h
-
 C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Graph.h
 iostream
 -
@@ -102,29 +66,13 @@ math.h
 MutablePriorityQueue.h
 C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/MutablePriorityQueue.h
 
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Menu.h
-iostream
--
-string
--
-vector
--
-GraphViewer/graphviewer.h
--
-Utils.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
-Point.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
-Graph.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Graph.h
-parse.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.h
-Company.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Company.h
-
 C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/MutablePriorityQueue.h
 vector
 -
+
+C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.cpp
+Parse.h
+C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.h
 
 C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Parse.h
 string
@@ -148,31 +96,9 @@ C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
 ostream
 -
 
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Restaurant.h
-
 C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
 string
 -
 vector
 -
-
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/main.cpp
-iostream
--
-string
--
-vector
--
-GraphViewer/graphviewer.h
--
-Utils.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Utils.h
-Point.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Point.h
-Graph.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Graph.h
-Company.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Company.h
-Menu.h
-C:/Users/shit/OneDrive/Ambiente de Trabalho/EATEXPRESS/Menu.h
 

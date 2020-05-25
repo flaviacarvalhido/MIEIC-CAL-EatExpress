@@ -53,7 +53,9 @@ void Company::readDeliveriesFile(string file) {
         for(unsigned int i =0;i< temp_temp_vec.size();i++){
             temp_vec.push_back(mstoi(temp_temp_vec[i]));
         }
+
         d.setOrderedItems(temp_vec);
+        temp_vec= vector<int>();
         deliveries.push_back(d);
     }
 }
