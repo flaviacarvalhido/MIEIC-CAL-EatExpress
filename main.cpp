@@ -93,8 +93,10 @@ int main()
         gv.setVertexLabel(perfectPath[0].getID(),"origin");
 
         double dist=graph.findVertex(perfectPath[perfectPath.size()-1].getID())->getDist();
-        cout<<"O estafeta encarregado da sua entrega e: "<<c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace()).getID()<<endl;
-
+        int espaco=c.getDeliveries()[0].calculateOccupiedSpace();
+        Deliverer d=c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace());
+        cout<<"O estafeta encarregado da sua entrega e: "<<d.getID()<<endl;
+        cout<<"O tempo estimado para a sua entrega e "<<int(((dist/1000)/d.getvMed())*60)+1<<" minutos"<<endl;
     }
 
 
@@ -154,8 +156,9 @@ int main()
             smallest_distance_index = smallest_restaurant_distance;
 
         }
-
-        cout<<"O estafeta encarregado da sua entrega tem o ID: "<<c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace()).getID()<<endl;
+        Deliverer d=c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace());
+        cout<<"O estafeta encarregado da sua entrega e: "<<d.getID()<<endl;
+        cout<<"O tempo estimado para a sua entrega e "<<int(((dist/1000)/d.getvMed())*60)+1<<" minutos"<<endl;
         for(int i=0;i<result.size();i++){
             gv.setVertexColor(result[i].getID(), "green");
         }
@@ -222,7 +225,10 @@ int main()
             smallest_distance_index = smallest_client_distance;
 
         }
-        cout<<"O estafeta encarregado da sua entrega tem o ID: "<<c.decideDeliverer(dist,c.getDeliveries()[0].calculateOccupiedSpace()).getID()<<endl;
+        int esp=c.getDeliveries()[0].calculateOccupiedSpace()+c.getDeliveries()[1].calculateOccupiedSpace()+c.getDeliveries()[2].calculateOccupiedSpace();
+        Deliverer d=c.decideDeliverer(dist,esp);
+        cout<<"O estafeta encarregado da sua entrega e: "<<d.getID()<<endl;
+        cout<<"O tempo estimado para a sua entrega e "<<int(((dist/1000)/d.getvMed())*60)+1<<" minutos"<<endl;
         for(int i=0;i<result.size();i++){
             gv.setVertexColor(result[i].getID(), "green");
         }
