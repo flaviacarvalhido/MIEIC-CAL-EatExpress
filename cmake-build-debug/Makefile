@@ -47,10 +47,10 @@ RM = "C:\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS"
+CMAKE_SOURCE_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\MIEIC-CAL-EatExpress2.0"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\shit\OneDrive\Ambiente de Trabalho\MIEIC-CAL-EatExpress2.0\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles" "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\shit\OneDrive\Ambiente de Trabalho\MIEIC-CAL-EatExpress2.0\cmake-build-debug\CMakeFiles" "C:\Users\shit\OneDrive\Ambiente de Trabalho\MIEIC-CAL-EatExpress2.0\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\shit\OneDrive\Ambiente de Trabalho\EATEXPRESS\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\shit\OneDrive\Ambiente de Trabalho\MIEIC-CAL-EatExpress2.0\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -311,6 +311,33 @@ Menu.cpp.s:
 	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
+NearestNeighbourAlgorithms.obj: NearestNeighbourAlgorithms.cpp.obj
+
+.PHONY : NearestNeighbourAlgorithms.obj
+
+# target to build an object file
+NearestNeighbourAlgorithms.cpp.obj:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/NearestNeighbourAlgorithms.cpp.obj
+.PHONY : NearestNeighbourAlgorithms.cpp.obj
+
+NearestNeighbourAlgorithms.i: NearestNeighbourAlgorithms.cpp.i
+
+.PHONY : NearestNeighbourAlgorithms.i
+
+# target to preprocess a source file
+NearestNeighbourAlgorithms.cpp.i:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/NearestNeighbourAlgorithms.cpp.i
+.PHONY : NearestNeighbourAlgorithms.cpp.i
+
+NearestNeighbourAlgorithms.s: NearestNeighbourAlgorithms.cpp.s
+
+.PHONY : NearestNeighbourAlgorithms.s
+
+# target to generate assembly for a file
+NearestNeighbourAlgorithms.cpp.s:
+	$(MAKE) -f CMakeFiles\EATEXPRESS.dir\build.make CMakeFiles/EATEXPRESS.dir/NearestNeighbourAlgorithms.cpp.s
+.PHONY : NearestNeighbourAlgorithms.cpp.s
+
 Parse.obj: Parse.cpp.obj
 
 .PHONY : Parse.obj
@@ -476,6 +503,9 @@ help:
 	@echo ... Menu.obj
 	@echo ... Menu.i
 	@echo ... Menu.s
+	@echo ... NearestNeighbourAlgorithms.obj
+	@echo ... NearestNeighbourAlgorithms.i
+	@echo ... NearestNeighbourAlgorithms.s
 	@echo ... Parse.obj
 	@echo ... Parse.i
 	@echo ... Parse.s

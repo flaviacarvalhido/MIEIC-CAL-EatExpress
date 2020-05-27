@@ -33,4 +33,4 @@ add_executable(EATEXPRESS
         Restaurant.cpp
         Restaurant.h
         Utils.cpp
-        Utils.h)
+        Utils.h NearestNeighbourAlgorithms.cpp NearestNeighbourAlgorithms.h)

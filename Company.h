@@ -35,6 +35,7 @@ public:
     void setTotalDeliveryRestaurants(vector<Restaurant> r);
     void setDeliveries(vector<Delivery> d);
     void setClients(vector <Client> c);
+    void setDeliverers(vector<Deliverer> d);
     Deliverer decideDeliverer(double distancia,int espaco);
 
 };

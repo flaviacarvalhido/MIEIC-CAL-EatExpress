@@ -130,4 +130,8 @@ void Company::setTotalDeliveryRestaurants(vector<Restaurant> r) {
     this->totalDeliveryRestaurants=r;
 }
 
+void Company::setDeliverers(vector<Deliverer> d) {
+    this->deliverers = d;
+}
+
 

@@ -11,6 +11,9 @@ void selecaoCaso() {
     cout << "2 - Uma encomenda com itens de varios restaurantes" << endl;
     cout << "3 - Varias encomendas para clientes diferentes do mesmo restaurante" << endl;
     cout << "4 - Varias encomendas de varios clientes e de varios restaurantes" << endl;
+    cout << "5 - Varias encomendas simples para varios estafetas" << endl;
+    cout << "6 - Varias encomendas com restaurantes multiplos para varios estafetas" << endl;
+    cout << "7 - Varias encomendas agrupadas por restaurante em comum para varios clientes distribuidas por varios estafetas" << endl;
     cout << "0 - Exit" << endl;
 }
 void selecaoCidade(){
@@ -29,7 +32,6 @@ int opcaoCidade(Company &c) {
 
         switch(menuOption) {
             case 0: // Exit
-
                 return 0;
             case 1: // Porto
                 c.readRestaurantFile("../Restaurants.txt");
@@ -74,6 +76,18 @@ int opcaoCaso(Company &c,int city) {
                 if(city==1) c.readDeliveriesFile("../DeliveriesPorto4.txt");
                 if(city==2) c.readDeliveriesFile("../DeliveriesViseu4.txt");
                 return 4;
+            case 5:
+                if(city==1) c.readDeliveriesFile("../DeliveriesPorto5.txt");
+                if(city==2) c.readDeliveriesFile("../DeliveriesViseu5.txt");
+                return 5;
+            case 6:
+                if(city==1) c.readDeliveriesFile("../DeliveriesPorto6.txt");
+                if(city==2) c.readDeliveriesFile("../DeliveriesViseu6.txt");
+                return 6;
+            case 7:
+                if(city==1) c.readDeliveriesFile("../DeliveriesPorto7.txt");
+                if(city==2) c.readDeliveriesFile("../DeliveriesViseu7.txt");
+                return 7;
             default:
                 cout << "Invalid input" << endl;
                 break;
